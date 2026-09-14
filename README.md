@@ -8,7 +8,7 @@ Todos os testes e a estrutura deste repositório foram criados por **Diogo Amanc
 
 ## ⚙️ Estrutura da Suíte de Testes qaFood
 
-A suíte de testes do qaFood é organizada em 5 Features, seguindo a jornada do usuário no aplicativo, do login à finalização e acompanhamento do pedido.
+A suíte de testes do qaFood é **organizada em 5 Features**, seguindo a jornada do usuário no aplicativo, do login à finalização e acompanhamento do pedido.
 
 | Feature                   |  Testes |
 | ------------------------- | ------: |
@@ -190,6 +190,10 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 ---
 
 ## 🔍 1. Feature Login
+
+| Feature                   |  Testes |
+| ------------------------- | ------: |
+| Feature_Login             |      36 |
 
 Valida o processo de autenticação e o comportamento dos campos e do botão de acesso, organizado em **8 subtópicos de testes**.
 

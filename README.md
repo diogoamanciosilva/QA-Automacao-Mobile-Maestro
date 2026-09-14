@@ -181,7 +181,7 @@ Valida o processo de autenticação e o comportamento dos campos e do botão de 
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Login:**
 
-**A) 1. Login com credenciais corretas**
+**A) 1. Login com credenciais corretas.yaml**
 
 https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
@@ -234,7 +234,7 @@ Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Lojas:**
 
-**A) 2. Abrir cardápio ao clicar em restaurante da lista**
+**A) 2. Abrir cardápio ao clicar em restaurante da lista.yaml**
 
 https://github.com/user-attachments/assets/03e83374-b7a0-45f2-ad3f-a2c33baab93c
 
@@ -296,7 +296,7 @@ Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em *
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Cardápio:**
 
-**E) 1.Adicionando vários itens do cardápio.**
+**E) 1.Adicionando vários itens do cardápio.yaml**
 
 
 https://github.com/user-attachments/assets/14f05aaf-79a5-429b-a4a6-b2ac17bbe0eb

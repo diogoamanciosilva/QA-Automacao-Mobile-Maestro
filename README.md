@@ -236,7 +236,7 @@ Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 
 
 **A) 2. Abrir cardápio ao clicar em restaurante da lista**
 
-https://github.com/user-attachments/assets/25a9231e-af96-4e54-8c0a-f329d3bdd910
+https://github.com/user-attachments/assets/03e83374-b7a0-45f2-ad3f-a2c33baab93c
 
 ## 📍 Subtópicos de testes - Feature Lojas
 

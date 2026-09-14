@@ -232,7 +232,7 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.
 
-**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Login:**
+**Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Lojas:**
 
 **A) 2. Abrir cardápio ao clicar em restaurante da lista**
 

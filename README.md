@@ -1,4 +1,4 @@
-# 😋 qaFood — Testes Automatizados com Maestro
+# 😋 qaFood — Testes Automatizados, framework Maestro
 
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
 

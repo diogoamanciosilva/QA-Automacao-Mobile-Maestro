@@ -296,7 +296,7 @@ Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em *
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Cardápio:**
 
-**A) 2. **
+**E) 1.Adicionando vários itens do cardápio.**
 
 
 https://github.com/user-attachments/assets/14f05aaf-79a5-429b-a4a6-b2ac17bbe0eb

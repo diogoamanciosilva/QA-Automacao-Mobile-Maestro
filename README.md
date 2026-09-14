@@ -352,8 +352,9 @@ Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela da Sacola (Carrinho):**
 
+**E) 3. Limpar sacola e readicionar item usando o botão 'Adicionar itens' da própria sacola.yaml**
 
-https://github.com/user-attachments/assets/3f4048d3-6048-42c7-8816-c6c342fe4bcc
+https://github.com/user-attachments/assets/1c144fbd-0f6f-49c2-bed9-fd91af716dd1
 
 
 ## 📍 Subtópicos de testes - Feature Sacola (Carrinho)

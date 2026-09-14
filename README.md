@@ -248,6 +248,10 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 ## 🔍 2. Feature Lojas
 
+| Feature                   |  Testes |
+| ------------------------- | ------: |
+| Feature_Lojas             |      35 |
+
 Valida a exibição, navegação e pesquisa dos restaurantes, organizada em **8 subtópicos de testes**.
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Lojas:**
@@ -310,6 +314,10 @@ https://github.com/user-attachments/assets/03e83374-b7a0-45f2-ad3f-a2c33baab93c
 
 ## 🔍 3. Feature Cardápio
 
+| Feature                   |  Testes |
+| ------------------------- | ------: |
+| Feature_Cardápio          |      17 |
+
 Valida o acesso aos restaurantes e o comportamento dos produtos, organizada em **7 subtópicos de testes**.
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Cardápio:**
@@ -366,6 +374,10 @@ https://github.com/user-attachments/assets/14f05aaf-79a5-429b-a4a6-b2ac17bbe0eb
 
 ## 🔍 4. Feature Sacola (Carrinho)
 
+| Feature                   |  Testes |
+| ------------------------- | ------: |
+| Feature_Sacola (Carrinho) |      18 |
+
 Valida o funcionamento do carrinho, organizada em **7 subtópicos de testes**.
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela da Sacola (Carrinho):**
@@ -420,6 +432,10 @@ https://github.com/user-attachments/assets/1c144fbd-0f6f-49c2-bed9-fd91af716dd1
 ---
 
 ## 🔍 5. Feature Pedido
+
+| Feature                   |  Testes |
+| ------------------------- | ------: |
+| Feature_Pedido            |      12 |
 
 Valida a confirmação e a finalização do pedido, organizada em **7 subtópicos de testes**.
 

@@ -2,11 +2,22 @@
 
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
 
-
-
 O projeto consiste de Suíte de testes **end-to-end (E2E)** para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela **Qazando** (professores Eduardo Finotti e Hebert Soares).
 
 Todos os testes e a estrutura deste repositório foram criados por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando **Android Studio**, **WSL (Linux)** e **Maestro**.
+
+## ⚙️ Estrutura da Suíte de Testes qaFood
+
+A suíte de testes do qaFood é organizada em 5 Features, seguindo a jornada do usuário no aplicativo, do login à finalização e acompanhamento do pedido.
+
+| Feature                   |  Testes |
+| ------------------------- | ------: |
+| Feature_Login             |      36 |
+| Feature_Lojas             |      35 |
+| Feature_Cardápio          |      17 |
+| Feature_Sacola (Carrinho) |      18 |
+| Feature_Pedido            |      12 |
+| **Total**                 | **118** |
 
 ---
 

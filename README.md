@@ -14,7 +14,9 @@ Todos os testes e a estrutura deste repositório foram criados por **Diogo Amanc
 
 O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário:
 
-**Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento**
+```text
+Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
+```
 
 **Abaixo segue o vídeo demonstrativo do cenário de teste end-to-end (E2E) descrito acima:**
 

@@ -407,8 +407,10 @@ Valida a confirmação e a finalização do pedido, organizada em **7 subtópico
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Pedido:**
 
+**D) 3. Fazer pedido com Cartão de crédito confirma sucesso e forma de pagamento correta.yaml**
 
-https://github.com/user-attachments/assets/1065116f-5af0-41b6-8044-6963b72558f7
+
+
 
 
 ## 📍 Subtópicos de testes - Feature Pedido

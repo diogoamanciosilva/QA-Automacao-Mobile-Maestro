@@ -181,6 +181,8 @@ Valida o processo de autenticação e o comportamento dos campos e do botão de 
 
 **Abaixo um vídeo demonstrativo de um dos cenários de testes da tela de Login:**
 
+**A) 1. Login com credenciais corretas**
+
 https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 ## 📍 Subtópicos de testes - Feature Login

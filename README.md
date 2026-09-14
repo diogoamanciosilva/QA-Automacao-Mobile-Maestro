@@ -4,7 +4,18 @@
 
 O projeto consiste de Suíte de testes **end-to-end (E2E)** para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela **Qazando** (professores Eduardo Finotti e Hebert Soares).
 
-Todos os testes e a estrutura deste repositório foram criados por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**, utilizando **Android Studio**, **WSL (Linux)** e **Maestro**.
+Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**.
+
+### Maestro
+
+O Maestro utiliza recursos e conceitos de frameworks como **Appium, Espresso, UIAutomator e XCTest**, aproveitando suas bases para a execução de testes automatizados.
+
+### Pré-requisitos para utilização no Windows
+
+* **Java JDK 11**
+* **Android Studio**
+* **Linux (WSL)**
+
 
 ## ⚙️ Estrutura da Suíte de Testes qaFood
 

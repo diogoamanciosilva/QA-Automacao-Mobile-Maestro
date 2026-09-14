@@ -409,8 +409,7 @@ Valida a confirmação e a finalização do pedido, organizada em **7 subtópico
 
 **D) 3. Fazer pedido com Cartão de crédito confirma sucesso e forma de pagamento correta.yaml**
 
-
-
+https://github.com/user-attachments/assets/b6225846-2b9d-406c-9fb7-45348867e1e4
 
 
 ## 📍 Subtópicos de testes - Feature Pedido

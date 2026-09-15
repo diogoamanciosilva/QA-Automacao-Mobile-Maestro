@@ -60,6 +60,49 @@ https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
 
 ---
 
+## 🚀 Como executar este projeto 
+
+Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção [Ambiente e rotina diária](#🛠️-ambiente-e-rotina-diária) mais abaixo.
+
+### Pré-requisitos
+
+- **Java JDK 11**
+- **Android Studio** (com um AVD configurado — este projeto usa `Pixel_4`)
+- **WSL** (Linux) instalado no Windows
+- **Maestro CLI** instalado dentro do WSL ([guia oficial de instalação](https://docs.maestro.dev/getting-started/installing-maestro))
+- App **qaFood** já instalado no emulador (`appId: com.qazandoqafood`) — se ainda não estiver, veja a seção *"Instalação do aplicativo"* abaixo
+
+### Passos
+
+1. **Abra o emulador** (PowerShell):
+```powershell
+   cd $env:LOCALAPPDATA\Android\Sdk\emulator
+   .\emulator.exe -avd Pixel_4 -gpu swiftshader_indirect
+```
+   Aguarde carregar completamente.
+
+2. **Conecte o WSL ao emulador** (terminal WSL):
+```bash
+   adb kill-server
+   adb connect <IP>:25555
+   adb devices
+```
+   > O `<IP>` muda a cada reinício — descubra o valor atual com `ip route show default | awk '{print $3}'`
+
+3. **Rode um teste**:
+```bash
+   maestro --host <IP> test "1 - Feature_Login/Login com credenciais corretas.yaml"
+```
+
+4. **(Opcional) Abra o Maestro Studio** para navegar visualmente pelos testes:
+```bash
+   cd ~/Downloads
+   ./MaestroStudio.AppImage
+```
+
+🏆 Se o passo 3 rodar sem erro de "Flow path does not exist" e o login acontecer no emulador, seu ambiente está pronto.
+
+
 ## 🛠️ Ambiente e rotina diária
 
 O ambiente de testes combina:

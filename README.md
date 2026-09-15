@@ -527,6 +527,5 @@ https://github.com/user-attachments/assets/b6225846-2b9d-406c-9fb7-45348867e1e4
 
 ## ✅ Seção de Contato
 
-| Contato                  |   |
+| LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ |
 | ------------------------- | ------: |
-| LinkedIn            |       https://www.linkedin.com/in/diogoamanciosilva/ |

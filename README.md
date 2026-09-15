@@ -6,7 +6,23 @@ O projeto consiste de Suíte de testes **end-to-end (E2E)** para o aplicativo **
 
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**.
 
-### Maestro
+---
+
+## 📱 Sobre o app
+
+O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário:
+
+```text
+Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
+```
+
+**Abaixo segue o vídeo demonstrativo do cenário de teste end-to-end (E2E) descrito acima:**
+
+https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
+
+---
+
+# 🤖 Maestro
 
 O framework Maestro utiliza recursos e conceitos de outros frameworks como **Appium, Espresso, UIAutomator e XCTest**, aproveitando suas bases para a execução de testes automatizados.
 
@@ -15,6 +31,8 @@ O framework Maestro utiliza recursos e conceitos de outros frameworks como **App
 * **Java JDK 11**
 * **Android Studio**
 * **Linux (WSL)**
+
+---
 
 ## 🎯 Tipos de teste realizados na suíte
 
@@ -43,20 +61,6 @@ A suíte de testes do qaFood é **organizada em 5 Features**, seguindo a jornada
 | Feature_Sacola (Carrinho) |      18 |
 | Feature_Pedido            |      12 |
 | **Total**                 | **118** |
-
----
-
-## 📱 Sobre o app
-
-O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário:
-
-```text
-Login → Lojas → Cardápio → Sacola → Pedido → Acompanhamento
-```
-
-**Abaixo segue o vídeo demonstrativo do cenário de teste end-to-end (E2E) descrito acima:**
-
-https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
 
 ---
 
@@ -102,6 +106,7 @@ Um resumo rápido para quem está clonando este repositório pela primeira vez. 
 
 🏆 **Se o passo 3 rodar sem erro de "Flow path does not exist" e o login acontecer no emulador, seu ambiente está pronto.**
 
+---
 
 ## 🛠️ Ambiente e rotina diária
 
@@ -571,8 +576,12 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 | BUG-07 | Erro de digitação no texto exibido na tela de acompanhamento do pedido: "Previsão de **entrega**" (faltando o "n" de "entrega") | Cosmético (Interface/UI) | Finalizar um pedido e visualizar a tela "Pedido realizado" | `E) 1`, `G) 1` — Feature Pedido |
 | BUG-08 | Erro de digitação no `id` do botão de adicionar item ao cardápio: `add-item-buttom` (com "m" no lugar de "n") — não impede o funcionamento, mas é uma inconsistência de nomenclatura no código do app | Cosmético (Interface/UI) | Inspecionar o elemento via `maestro hierarchy` na tela de Cardápio | Confirmado em todos os testes que interagem com o botão de adicionar item |
 
+---
+
 ### Observação
 Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não falhas críticas. Os itens de severidade **Cosmético (Interface/UI)** foram incluídos por transparência e completude do processo de teste, não por representarem risco ao usuário.
+
+---
 
 ## 💡 Aprendizados técnicos
 
@@ -585,6 +594,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 - **Mensagens reais confirmadas:** `"Erro ao realizar login"`, `"CUPOM inválido"` e `"Selecione uma forma de pagamento"`.
 - **Ciclo de vida do aplicativo:** fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login neste aplicativo**. É necessário refazer o `runFlow` de login mesmo sem limpar o estado.
 
+---
 
 ## ✅ Contato
 

@@ -16,6 +16,20 @@ O Maestro utiliza recursos e conceitos de frameworks como **Appium, Espresso, UI
 * **Android Studio**
 * **Linux (WSL)**
 
+## 🎯 Tipos de teste realizados na suíte
+
+A suíte de testes do qaFood é composta por todos os tipos de testes descritos abaixo:
+
+| Tipo de Teste | O que valida | Exemplos na suíte |
+| --- | --- | --- |
+| **Funcionais** | Regras de negócio: autenticação, busca, cálculo de subtotal/total, adição/remoção de itens, confirmação de pedido | Categoria predominante — presente em todas as 5 Features |
+| **E2E (ponta a ponta)** | Jornada completa atravessando múltiplas Features em sequência | "Após realizar o pedido, clicar em voltar e retornar a página de Lojas"; "Validar a Rotação de Tela após a Conclusão do Pedido" |
+| **Integração** | Persistência e comunicação de estado entre telas/módulos | "Carrinho não duplica nem perde produto após múltiplas idas e vindas"; "Sacola não é mantida após fechar e reabrir o app" |
+| **Negativos / Borda (edge cases)** | Entradas inválidas e valores-limite | Campos vazios, e-mail malformado, senha incorreta, espaços em branco, caracteres especiais, capitalização, cupom inválido |
+| **Não Funcionais** | Comportamento sob condições do sistema operacional, não regra de negócio | Rotação de tela, app em segundo plano (Home + relaunch), tecla Enter/Done |
+| **Concorrência** | Ações quase simultâneas / condição de corrida | "Duplo toque simultâneo no botão Entrar"; "Duplo toque rápido no botão de adicionar" |
+| **Regressão** | Não é uma categoria de design — é a função da suíte quando reexecutada após mudanças no app | A suíte completa, ao rodar antes de cada release |
+| **Aceitação** | Critérios básicos de aceite cumpridos informalmente (sem UAT/BDD formal) | Cenários de caminho feliz: login correto, pedido concluído com sucesso, busca encontrando o restaurante certo |
 
 ## ⚙️ Estrutura da Suíte de Testes qaFood
 

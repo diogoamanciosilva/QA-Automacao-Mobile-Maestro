@@ -523,3 +523,13 @@ https://github.com/user-attachments/assets/b6225846-2b9d-406c-9fb7-45348867e1e4
 - **IDs confirmados no app:** `add-item-buttom` (sic — contém erro de digitação no próprio app), `open-cart-button` e `back-button`.
 - **Mensagens reais confirmadas:** `"Erro ao realizar login"`, `"CUPOM inválido"` e `"Selecione uma forma de pagamento"`.
 - **Ciclo de vida do aplicativo:** fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login neste aplicativo**. É necessário refazer o `runFlow` de login mesmo sem limpar o estado.
+
+
+## ✅ Contato
+
+| Tipo de Teste | O que valida |
+| --- | --- | 
+| **LinkedIn** | https://www.linkedin.com/in/diogoamanciosilva/| 
+
+
+

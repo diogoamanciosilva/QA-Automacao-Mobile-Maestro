@@ -62,7 +62,7 @@ https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
 
 ## 🚀 Como executar este projeto 
 
-Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção [Ambiente e rotina diária](#🛠️-ambiente-e-rotina-diária) mais abaixo.
+Um resumo rápido para quem está clonando este repositório pela primeira vez. Para ver o passo a passo completo, consulte a seção "🛠️ Ambiente e rotina diária" mais abaixo.
 
 ### Pré-requisitos
 

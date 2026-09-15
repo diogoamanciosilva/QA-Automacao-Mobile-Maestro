@@ -67,7 +67,7 @@ Um resumo rápido para quem está clonando este repositório pela primeira vez. 
 ### Pré-requisitos
 
 - **Java JDK 11**
-- **Android Studio** (com um AVD configurado — este projeto usa `Pixel_4`)
+- **Android Studio** (com um AVD configurado, este projeto usa `Pixel_4`)
 - **WSL** (Linux) instalado no Windows
 - **Maestro CLI** instalado dentro do WSL ([guia oficial de instalação](https://docs.maestro.dev/getting-started/installing-maestro))
 - App **qaFood** já instalado no emulador (`appId: com.qazandoqafood`) — se ainda não estiver, veja a seção *"Instalação do aplicativo"* abaixo

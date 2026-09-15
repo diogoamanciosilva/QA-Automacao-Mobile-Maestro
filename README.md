@@ -529,7 +529,7 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 | BUG-08 | Erro de digitação no `id` do botão de adicionar item ao cardápio: `add-item-buttom` (com "m" no lugar de "n") — não impede o funcionamento, mas é uma inconsistência de nomenclatura no código do app | Cosmético (Interface/UI) | Inspecionar o elemento via `maestro hierarchy` na tela de Cardápio | Confirmado em todos os testes que interagem com o botão de adicionar item |
 
 ### Observação
-Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não falhas críticas. Os itens de severidade "Cosmético" foram incluídos por transparência e completude do processo de teste, não por representarem risco ao usuário.
+Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não falhas críticas. Os itens de severidade **Cosmético (Interface/UI)** foram incluídos por transparência e completude do processo de teste, não por representarem risco ao usuário.
 
 ## 💡 Aprendizados técnicos
 

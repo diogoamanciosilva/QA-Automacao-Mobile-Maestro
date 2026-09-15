@@ -1,4 +1,4 @@
-# 🤖 Automação Mobile Maestro (qaFood)
+## 🤖 Automação Mobile Maestro (qaFood)
 
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
 
@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
 
 ---
 
-# 🤖 Maestro
+## 🤖 Maestro
 
 O framework Maestro utiliza recursos e conceitos de outros frameworks como **Appium, Espresso, UIAutomator e XCTest**, aproveitando suas bases para a execução de testes automatizados.
 

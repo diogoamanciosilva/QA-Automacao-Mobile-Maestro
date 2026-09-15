@@ -49,6 +49,8 @@ A suíte de testes do qaFood é composta por todos os tipos de testes descritos 
 | **Regressão** | Não é uma categoria de design — é a função da suíte quando reexecutada após mudanças no app | A suíte completa, ao rodar antes de cada release |
 | **Aceitação** | Critérios básicos de aceite cumpridos informalmente (sem UAT/BDD formal) | Cenários de caminho feliz: login correto, pedido concluído com sucesso, busca encontrando o restaurante certo |
 
+---
+
 ## ⚙️ Estrutura da Suíte de Testes qaFood
 
 A suíte de testes do qaFood é **organizada em 5 Features**, seguindo a jornada do usuário no aplicativo, do login à finalização e acompanhamento do pedido.

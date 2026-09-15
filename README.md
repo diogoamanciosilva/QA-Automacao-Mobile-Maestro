@@ -527,7 +527,6 @@ https://github.com/user-attachments/assets/b6225846-2b9d-406c-9fb7-45348867e1e4
 
 ## ✅ Contato
 
-| Tipo de Teste | O que valida |
 | --- | --- | 
 | **LinkedIn** | https://www.linkedin.com/in/diogoamanciosilva/| 
 

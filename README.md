@@ -525,8 +525,8 @@ https://github.com/user-attachments/assets/b6225846-2b9d-406c-9fb7-45348867e1e4
 - **Ciclo de vida do aplicativo:** fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login neste aplicativo**. É necessário refazer o `runFlow` de login mesmo sem limpar o estado.
 
 
-## ✅ Contato
+## ✅ Seção de Contato
 
-| Contato                  |  Testes |
+| Contato                  |   |
 | ------------------------- | ------: |
 | LinkedIn            |       https://www.linkedin.com/in/diogoamanciosilva/ |

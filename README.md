@@ -707,11 +707,11 @@ A raiz comum é que a comparação de texto na busca e no login não normaliza m
 
 <img width="1075" height="948" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ede1e549-2de8-44ca-b645-8b3876bf816f" />
 
-**Falta de persistência** de estado agrupa BUG-05 e BUG-06, ambos derivados da mesma origem: a ausência de persistência de sessão entre reinicializações do aplicativo. É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
+**Falta de persistência:** de estado agrupa BUG-05 e BUG-06, ambos derivados da mesma origem: a ausência de persistência de sessão entre reinicializações do aplicativo. É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
 
 ### 🫆 Causa Raiz 3: Eventos de teclado
 
-**Eventos de teclado** é a única com um único bug associado (BUG-04), mas com uma causa raiz bem definida: o formulário de login escuta apenas o evento de toque no botão, ignorando completamente os eventos de submissão via teclado (Enter/Done). Diferente das outras três causas, essa é classificada diretamente como "Bug funcional", sem ambiguidade pois a submissão via teclado é um comportamento padrão esperado em qualquer formulário mobile bem implementado, não uma decisão de design defensável.
+- **Eventos de teclado:** é a única com um único bug associado (BUG-04), mas com uma causa raiz bem definida: o formulário de login escuta apenas o evento de toque no botão, ignorando completamente os eventos de submissão via teclado (Enter/Done). Diferente das outras três causas, essa é classificada diretamente como "Bug funcional", sem ambiguidade pois a submissão via teclado é um comportamento padrão esperado em qualquer formulário mobile bem implementado, não uma decisão de design defensável.
 
 <img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
 
@@ -719,7 +719,7 @@ A raiz comum é que a comparação de texto na busca e no login não normaliza m
 
 <img width="1078" height="983" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db3b7673-8a4b-4052-a682-c196de54a1c0" />
 
-**Revisão de texto e nomenclatura** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
+**Revisão de texto e nomenclatura:** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
 
 ### 🫆 Conclusão
 

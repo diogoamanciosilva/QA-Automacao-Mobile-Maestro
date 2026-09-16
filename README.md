@@ -28,6 +28,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
 - [💡 Aprendizados técnicos](#-aprendizados-técnicos)
 - [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
+- [✅ Contato (#️-contato)
 
 ---
 

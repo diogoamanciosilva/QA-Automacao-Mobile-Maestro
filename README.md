@@ -652,7 +652,7 @@ Conclusão: a suíte apresenta uma cobertura distribuída por toda a jornada pri
 
 ### 📈 Bugs por Severidade
 
-<img width="933" height="587" alt="image" src="https://github.com/user-attachments/assets/2cba5c4c-4790-4d3e-a5df-a8e38e3c6f03" />
+<img width="930" height="575" alt="image" src="https://github.com/user-attachments/assets/e5777cf5-5b3a-48c4-acee-d47a5348db60" />
 
 ### 📈 Análise Bugs Encontrados por Severidade
 

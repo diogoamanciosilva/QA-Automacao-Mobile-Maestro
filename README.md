@@ -627,14 +627,15 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 ### Distribuição de testes por Feature
 
-<img width="602" height="395" alt="image" src="https://github.com/user-attachments/assets/e0bf228b-7cdc-4f87-8e1b-d20676be0de5" />
+<img width="917" height="590" alt="image" src="https://github.com/user-attachments/assets/fc06234c-fe68-443d-b6e8-1d886072fb5a" />
 
 As duas primeiras etapas da jornada (Login + Lojas) concentram 60% de toda a suíte (71 de 118 testes), reflexo direto da superfície de validação de entrada (formatos, capitalização, espaços, caracteres especiais) presente nessas telas.
 
 
-### Bugs por severidade
+### Bugs por Severidade
 
-<img width="587" height="390" alt="image" src="https://github.com/user-attachments/assets/0ee5961a-9a5c-4eb2-8117-e6ec59383b72" />
+<img width="933" height="587" alt="image" src="https://github.com/user-attachments/assets/2cba5c4c-4790-4d3e-a5df-a8e38e3c6f03" />
+
 
 
 ## 🔎 Análise de Causa Raiz

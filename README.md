@@ -616,8 +616,9 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 ---
 
 ### ⚠️ Observação
+```text
 Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não falhas críticas. Os itens de severidade **Cosmético (Interface/UI)** foram incluídos por transparência e completude do processo de teste, não por representarem risco ao usuário.
-
+```
 ---
 
 ## 🧪 Metodologia de teste
@@ -644,8 +645,9 @@ Foi aplicado em pontos críticos de interação rápida do usuário — duplo to
 Validou o comportamento do app sob condições fora do controle direto da aplicação: rotação de tela, transição para segundo plano e retorno, e reinicialização completa do processo, cobrindo cenários de uso real que vão além da interação direta com a interface.
 
 ### ⚠️ Observação
+```text
 Essa combinação de técnicas  planejadas e exploratórias, permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar bugs reais que não estariam cobertos por um roteiro de teste estritamente linear.
-
+```
 ---
 
 ## 🚧 Limitações e escopo

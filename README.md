@@ -628,7 +628,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 ### 📈 Distribuição de Testes por Feature
 
-<img width="917" height="590" alt="image" src="https://github.com/user-attachments/assets/fc06234c-fe68-443d-b6e8-1d886072fb5a" />
+<img width="917" height="582" alt="image" src="https://github.com/user-attachments/assets/dedf281c-78bf-4c68-b17b-eb049b9a33eb" />
 
 ### 📈 Análise Testes por Feature
 

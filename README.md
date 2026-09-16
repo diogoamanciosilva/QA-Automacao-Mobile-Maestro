@@ -700,6 +700,6 @@ Essas exclusões não representam falhas na cobertura, mas sim decisões conscie
 
 ## ✅ Contato
 
-| LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ |
-| E-mail                   |  diogoamanciosilva@gmail.com/ |
+| LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ 
+| E-mail                   |  diogoamanciosilva@gmail.com/ 
 | ------------------------- | ------: |

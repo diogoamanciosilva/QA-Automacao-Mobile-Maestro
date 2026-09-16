@@ -626,24 +626,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 ### Distribuição de testes por Feature
 
-graph TD
-
-    A[Causa Raiz 1:<br/>Comparação de texto não normaliza<br/>maiúsculas/minúsculas nem espaços] --> BUG01[BUG-01: Busca falha com<br/>palavra em MAIÚSCULAS]
-    A --> BUG02[BUG-02: Busca falha<br/>100% minúsculo]
-    A --> BUG03[BUG-03: Campos não fazem<br/>trim de espaços nas pontas]
-
-    B[Causa Raiz 2:<br/>Ausência de persistência de estado<br/>entre sessões do app] --> BUG05[BUG-05: Sessão de login<br/>não é mantida]
-    B --> BUG06[BUG-06: Conteúdo da sacola<br/>é perdido ao reabrir]
-
-    C[Causa Raiz 3:<br/>Formulário não escuta eventos<br/>de teclado, só toque no botão] --> BUG04[BUG-04: Enter/Done não<br/>submete o login]
-
-    D[Causa Raiz 4:<br/>Falta de revisão de texto/nomenclatura<br/>antes do build - QA de copy] --> BUG07[BUG-07: Typo em<br/>"Previsão de etrega"]
-    D --> BUG08[BUG-08: Typo no id<br/>add-item-buttom]
-
-    style A fill:#ffcccc
-    style B fill:#ffe0b3
-    style C fill:#fff5cc
-    style D fill:#e6f2ff
+<img width="602" height="395" alt="image" src="https://github.com/user-attachments/assets/e0bf228b-7cdc-4f87-8e1b-d20676be0de5" />
 
 
 

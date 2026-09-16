@@ -8,6 +8,29 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 
 ---
 
+## 📑 Índice
+
+- [🎯 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
+- [⚙️ Estrutura da Suíte de Testes qaFood](#️-estrutura-da-suíte-de-testes-qafood)
+- [📱 Sobre o app](#-sobre-o-app)
+- [🛠️ Ambiente e rotina diária](#️-ambiente-e-rotina-diária)
+- [📁 Estrutura do repositório](#-estrutura-do-repositório)
+- [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
+- [💻 Features](#-features)
+- [🔍 1. Feature Login](#-1-feature-login)
+- [🔍 2. Feature Lojas](#-2-feature-lojas)
+- [🔍 3. Feature Cardápio](#-3-feature-cardápio)
+- [🔍 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
+- [🔍 5. Feature Pedido](#-5-feature-pedido)
+- [🐞 Bugs Encontrados](#-bugs-encontrados)
+- [🧪 Metodologia de teste](#-metodologia-de-teste)
+- [🚧 Limitações e escopo](#-limitações-e-escopo)
+- [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
+- [💡 Aprendizados técnicos](#-aprendizados-técnicos)
+- [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
+
+---
+
 ## 📱 Sobre o app
 
 O qaFood simula um aplicativo de delivery completo, cobrindo a jornada real de um usuário:
@@ -31,6 +54,17 @@ O framework Maestro utiliza recursos e conceitos de outros frameworks como **App
 * **Java JDK 11**
 * **Android Studio**
 * **Linux (WSL)**
+  
+---
+
+## 🏷️ Tecnologias utilizadas
+
+![Maestro](https://img.shields.io/badge/Maestro-Mobile%20Testing-1E88E5?style=for-the-badge)
+![YAML](https://img.shields.io/badge/YAML-Test%20Scripts-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
+![Android](https://img.shields.io/badge/Android-Emulator-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![WSL](https://img.shields.io/badge/WSL-Linux%20on%20Windows-4D4D4D?style=for-the-badge&logo=linux&logoColor=white)
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
@@ -582,6 +616,71 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 
 ### ⚠️ Observação
 Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não falhas críticas. Os itens de severidade **Cosmético (Interface/UI)** foram incluídos por transparência e completude do processo de teste, não por representarem risco ao usuário.
+
+---
+
+## 🧪 Metodologia de teste
+
+A construção da suíte seguiu um processo iterativo, combinando técnicas formais de design de testes com investigação exploratória sempre que o comportamento do aplicativo não estava documentado previamente.
+
+**Particionamento de equivalência e análise de valor-limite**
+
+Foram aplicados de forma sistemática, principalmente na Feature Login e na Feature Lojas: campos testados com valores válidos, valores vazios, valores no limite de tamanho (e-mails e senhas muito longos) e valores fora do padrão esperado (caracteres especiais, espaços em branco isolados ou combinados).
+
+**Teste negativo (negative testing)** 
+Foi usado extensivamente para garantir que o aplicativo rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, cupons inválidos e tentativas de finalizar pedido sem forma de pagamento selecionada.
+
+**Teste exploratório** 
+Foi a técnica central para descobrir comportamentos não óbvios do aplicativo, como a sensibilidade da busca a texto em maiúsculas. Esse bug específico não foi encontrado por um caso de teste pré-planejado, mas por uma investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar exatamente o padrão do problema (qualquer palavra inteira em maiúsculas, independentemente da posição no termo buscado).
+
+**Teste de regressão implícito** 
+Ocorre a cada nova execução completa da suíte, servindo como rede de segurança para identificar quebras de comportamento em versões futuras do aplicativo.
+
+**Teste de condição de corrida (concorrência)** 
+Foi aplicado em pontos críticos de interação rápida do usuário — duplo toque no botão de login e no botão de adicionar item ao carrinho — para verificar se o app processa múltiplas ações quase simultâneas sem duplicar submissões indevidamente.
+
+**Teste de robustez do sistema operacional** 
+Validou o comportamento do app sob condições fora do controle direto da aplicação: rotação de tela, transição para segundo plano e retorno, e reinicialização completa do processo, cobrindo cenários de uso real que vão além da interação direta com a interface.
+
+### ⚠️ Observação
+Essa combinação de técnicas  planejadas e exploratórias, permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar bugs reais que não estariam cobertos por um roteiro de teste estritamente linear.
+
+---
+
+## 🚧 Limitações e escopo
+
+Por se tratar de um aplicativo de estudo — não uma base de produção real — o escopo de testes foi definido a partir apenas do que estava disponível e observável na versão demo utilizada. Diferente de um ambiente de produção, onde o QA tem acesso a logs, dados reais de usuários, variações de cenários trazidas por bugfixes e hotfixes recorrentes, e uma base maior de casos de uso reportados diariamente pelo time e pelos clientes, este projeto foi construído com as informações que puderam ser confirmadas manualmente, tela a tela, ao longo do processo de exploração do app.
+
+Isso significa que alguns cenários ficaram intencionalmente fora do escopo por falta de confirmação de comportamento ou de elementos de interface disponíveis para inspeção:
+
+- **Remoção individual de item da sacola** — não foi possível confirmar a existência nem o identificador do botão de remoção/decremento de quantidade.
+- **Aplicação de cupom válido** — só foi possível validar o fluxo de cupom inválido e cupom vazio; nenhum cupom promocional válido estava disponível para teste.
+- **Categorias/abas do cardápio** — não foi confirmado se o cardápio possui navegação por categorias (ex: "Lanches", "Bebidas") ou se é uma lista única rolável.
+- **Login social e funcionalidade de mostrar/ocultar senha** — confirmado que essas funcionalidades não existem na versão testada do app.
+- **Testes de rede** (modo avião, conexão instável) — exigiriam manipulação via ADB fora do escopo do Maestro puro, e não foram priorizados para este projeto.
+---
+
+## 🚀 Próximos passos (CI/CD)
+
+Atualmente, a suíte é executada manualmente, com o emulador Android rodando localmente no Windows e os testes disparados via Maestro CLI a partir do WSL. A automação da execução via **GitHub Actions** foi avaliada como evolução natural do projeto, mas não foi implementada nesta fase por uma limitação técnica real, não por falta de planejamento:
+
+O Maestro depende de um **emulador Android ativo** (ou um dispositivo físico conectado) para executar qualquer teste — ele não interage com o app de forma "headless" ou simulada. Rodar um emulador Android dentro de um runner padrão do GitHub Actions exige:
+
+- Um runner com suporte a virtualização aninhada e aceleração de hardware (KVM), o que limita as opções gratuitas do GitHub Actions e normalmente exige runners self-hosted ou serviços de nuvem especializados em Android (como Firebase Test Lab ou runners customizados com GPU).
+- Tempo de boot do emulador consideravelmente mais alto em ambiente de CI do que localmente, aumentando o tempo total de pipeline e, consequentemente, o custo de execução.
+- Configuração adicional de rede para expor o emulador ao Maestro dentro do runner, replicando a mesma ponte ADB usada localmente entre Windows, WSL e o emulador.
+
+Diante dessas restrições, a decisão consciente foi priorizar a qualidade e a cobertura da suíte nesta fase, deixando a automação via CI como **próximo passo declarado** do projeto. Uma futura implementação consideraria:
+
+```bash
+1. Uso de runners self-hosted com suporte a KVM, ou serviços de nuvem para testes Android (Firebase Test Lab, BrowserStack App Automate).
+2. Gatilho do pipeline em pull requests e merges para a branch principal.
+3. Publicação automática dos relatórios de execução do Maestro como artefato do workflow.
+4. Notificação de falhas via integração com Slack ou e-mail.
+```
+Essa análise técnica, por si só, já reflete uma etapa importante do planejamento de qualidade: reconhecer as limitações de infraestrutura antes de tentar implementar uma automação que não seria sustentável no formato gratuito do GitHub Actions.
+
+Essas exclusões não representam falhas na cobertura, mas sim decisões conscientes de escopo, tomadas com base na informação disponível em cada momento — uma prática comum e necessária em qualquer ciclo real de testes.
 
 ---
 

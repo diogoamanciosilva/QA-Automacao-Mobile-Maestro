@@ -635,99 +635,24 @@ As duas primeiras etapas da jornada (Login + Lojas) concentram 60% de toda a su�
 
 <img width="587" height="390" alt="image" src="https://github.com/user-attachments/assets/0ee5961a-9a5c-4eb2-8117-e6ec59383b72" />
 
-```mermaid
-graph TD
 
-    %% =========================
-    %% CAUSA RAIZ 1
-    %% =========================
-    subgraph CR1["Causa Raiz 1 — Busca sem normalização"]
-        A["Comparação de texto não normaliza<br/>maiúsculas/minúsculas nem espaços"]
+## 🔎 Análise de Causa Raiz
 
-        BUG01["BUG-01<br/>Busca falha com palavra<br/>em MAIÚSCULAS"]
-        BUG02["BUG-02<br/>Busca falha com texto<br/>100% minúsculo"]
-        BUG03["BUG-03<br/>Campos não fazem trim<br/>de espaços nas pontas"]
+### Causa Raiz 1 — Busca sem normalização
 
-        CLASS01["Classificação:<br/>Bug de busca / UX"]
-        CLASS02["Classificação:<br/>Bug de busca / UX"]
-        CLASS03["Classificação:<br/>Bug de validação / UX"]
+[Mermaid 1]
 
-        A --> BUG01
-        A --> BUG02
-        A --> BUG03
+### Causa Raiz 2 — Falta de persistência de estado
 
-        BUG01 --> CLASS01
-        BUG02 --> CLASS02
-        BUG03 --> CLASS03
-    end
+[Mermaid 2]
 
+### Causa Raiz 3 — Eventos de teclado
 
-    %% =========================
-    %% CAUSA RAIZ 2
-    %% =========================
-    subgraph CR2["Causa Raiz 2 — Falta de persistência de estado"]
-        B["Ausência de persistência de estado<br/>entre sessões do aplicativo"]
+[Mermaid 3]
 
-        BUG05["BUG-05<br/>Sessão de login<br/>não é mantida"]
-        BUG06["BUG-06<br/>Conteúdo da sacola<br/>é perdido ao reabrir"]
+### Causa Raiz 4 — Revisão de texto e nomenclatura
 
-        CLASS05["Classificação:<br/>Limitação / possível bug"]
-        CLASS06["Classificação:<br/>Limitação / possível bug"]
-
-        B --> BUG05
-        B --> BUG06
-
-        BUG05 --> CLASS05
-        BUG06 --> CLASS06
-    end
-
-
-    %% =========================
-    %% CAUSA RAIZ 3
-    %% =========================
-    subgraph CR3["Causa Raiz 3 — Eventos de teclado"]
-        C["Formulário não escuta eventos<br/>de teclado, somente toque no botão"]
-
-        BUG04["BUG-04<br/>Enter / Done não<br/>submete o login"]
-
-        CLASS04["Classificação:<br/>Bug funcional"]
-
-        C --> BUG04
-        BUG04 --> CLASS04
-    end
-
-
-    %% =========================
-    %% CAUSA RAIZ 4
-    %% =========================
-    subgraph CR4["Causa Raiz 4 — Revisão de textos e nomenclatura"]
-        D["Falta de revisão de texto/nomenclatura<br/>antes do build — QA de Copy"]
-
-        BUG07["BUG-07<br/>Typo em<br/>Previsão de etrega"]
-        BUG08["BUG-08<br/>Typo no ID<br/>add-item-buttom"]
-
-        CLASS07["Classificação:<br/>Bug de conteúdo / UI"]
-        CLASS08["Classificação:<br/>Problema de nomenclatura"]
-
-        D --> BUG07
-        D --> BUG08
-
-        BUG07 --> CLASS07
-        BUG08 --> CLASS08
-    end
-
-
-    %% =========================
-    %% ESTILOS
-    %% =========================
-    classDef causa fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#000;
-    classDef bug fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000;
-    classDef classificacao fill:#fff8e1,stroke:#f9a825,stroke-width:2px,color:#000;
-
-    class A,B,C,D causa;
-    class BUG01,BUG02,BUG03,BUG04,BUG05,BUG06,BUG07,BUG08 bug;
-    class CLASS01,CLASS02,CLASS03,CLASS04,CLASS05,CLASS06,CLASS07,CLASS08 classificacao;
-```
+[Mermaid 4]
 
 ---
 

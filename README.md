@@ -1,4 +1,4 @@
-<img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/24db2266-7142-4f74-adcc-5cabbf7bb800" />
+
 ## 🤖 Automação Mobile Maestro (qaFood)
 
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />

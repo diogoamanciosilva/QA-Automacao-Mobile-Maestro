@@ -718,19 +718,15 @@ A construção da suíte qaFood seguiu um processo iterativo, combinando técnic
 
 Foram aplicados de forma sistemática, principalmente na Feature Login e na Feature Lojas: campos testados com valores válidos, valores vazios, valores no limite de tamanho (e-mails e senhas muito longos) e valores fora do padrão esperado (caracteres especiais, espaços em branco isolados ou combinados).
 
-- **Teste negativo:** Foi usado extensivamente para garantir que o aplicativo rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, cupons inválidos e tentativas de finalizar pedido sem forma de pagamento selecionada.
+- **Teste negativo:** Foi usado extensivamente para garantir que o aplicativo rejeita corretamente entradas inválidas sem quebrar, credenciais incorretas, buscas sem resultado, cupons inválidos e tentativas de finalizar pedido sem forma de pagamento selecionada.
 
-**Teste exploratório** 
-Foi a técnica central para descobrir comportamentos não óbvios do aplicativo, como a sensibilidade da busca a texto em maiúsculas. Esse bug específico não foi encontrado por um caso de teste pré-planejado, mas por uma investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar exatamente o padrão do problema (qualquer palavra inteira em maiúsculas, independentemente da posição no termo buscado).
+- ****Teste exploratório:** Foi a técnica central para descobrir comportamentos não óbvios do aplicativo, como a sensibilidade da busca a texto em maiúsculas. Esse bug específico não foi encontrado por um caso de teste pré-planejado, mas por uma investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar exatamente o padrão do problema (qualquer palavra inteira em maiúsculas, independentemente da posição no termo buscado).
 
-**Teste de regressão implícito** 
-Ocorre a cada nova execução completa da suíte, servindo como rede de segurança para identificar quebras de comportamento em versões futuras do aplicativo.
+- **Teste de regressão implícito:** Ocorre a cada nova execução completa da suíte, servindo como rede de segurança para identificar quebras de comportamento em versões futuras do aplicativo.
 
-**Teste de condição de corrida (concorrência)** 
-Foi aplicado em pontos críticos de interação rápida do usuário — duplo toque no botão de login e no botão de adicionar item ao carrinho — para verificar se o app processa múltiplas ações quase simultâneas sem duplicar submissões indevidamente.
+**Teste de condição de corrida (concorrência):** Foi aplicado em pontos críticos de interação rápida do usuário — duplo toque no botão de login e no botão de adicionar item ao carrinho — para verificar se o app processa múltiplas ações quase simultâneas sem duplicar submissões indevidamente.
 
-**Teste de robustez do sistema operacional** 
-Validou o comportamento do app sob condições fora do controle direto da aplicação: rotação de tela, transição para segundo plano e retorno, e reinicialização completa do processo, cobrindo cenários de uso real que vão além da interação direta com a interface.
+**Teste de robustez do sistema operacional:** Validou o comportamento do app sob condições fora do controle direto da aplicação: rotação de tela, transição para segundo plano e retorno, e reinicialização completa do processo, cobrindo cenários de uso real que vão além da interação direta com a interface.
 
 ### ⚠️ Observação
 ```text

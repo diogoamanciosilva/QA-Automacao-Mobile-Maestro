@@ -650,15 +650,15 @@ Essa combinação de técnicas  planejadas e exploratórias, permitiu não apena
 
 ## 🚧 Limitações e escopo
 
-Por se tratar de um aplicativo de estudo — não uma base de produção real — o escopo de testes foi definido a partir apenas do que estava disponível e observável na versão demo utilizada. Diferente de um ambiente de produção, onde o QA tem acesso a logs, dados reais de usuários, variações de cenários trazidas por bugfixes e hotfixes recorrentes, e uma base maior de casos de uso reportados diariamente pelo time e pelos clientes, este projeto foi construído com as informações que puderam ser confirmadas manualmente, tela a tela, ao longo do processo de exploração do app.
+Por se tratar de um aplicativo de estudo e não uma base de produção real, o escopo de testes foi definido a partir apenas do que estava disponível e observável na versão demo utilizada. Diferente de um ambiente de produção, onde o QA tem acesso a logs, dados reais de usuários, variações de cenários trazidas por bugfixes e hotfixes recorrentes, e uma base maior de casos de uso reportados diariamente pelo time e pelos clientes, este projeto foi construído com as informações que puderam ser confirmadas manualmente, tela a tela, ao longo do processo de exploração do app qaFood.
 
 Isso significa que alguns cenários ficaram intencionalmente fora do escopo por falta de confirmação de comportamento ou de elementos de interface disponíveis para inspeção:
 
-- **Remoção individual de item da sacola** — não foi possível confirmar a existência nem o identificador do botão de remoção/decremento de quantidade.
-- **Aplicação de cupom válido** — só foi possível validar o fluxo de cupom inválido e cupom vazio; nenhum cupom promocional válido estava disponível para teste.
-- **Categorias/abas do cardápio** — não foi confirmado se o cardápio possui navegação por categorias (ex: "Lanches", "Bebidas") ou se é uma lista única rolável.
-- **Login social e funcionalidade de mostrar/ocultar senha** — confirmado que essas funcionalidades não existem na versão testada do app.
-- **Testes de rede** (modo avião, conexão instável) — exigiriam manipulação via ADB fora do escopo do Maestro puro, e não foram priorizados para este projeto.
+- **Remoção individual de item da sacola**: Não foi possível confirmar a existência nem o identificador do botão de remoção/decremento de quantidade.
+- **Aplicação de cupom válido**: Só foi possível validar o fluxo de cupom inválido e cupom vazio; nenhum cupom promocional válido estava disponível para teste.
+- **Categorias/abas do cardápio**: Não foi confirmado se o cardápio possui navegação por categorias (ex: "Lanches", "Bebidas") ou se é uma lista única rolável.
+- **Login social e Funcionalidade de mostrar/ocultar senha**: Confirmado que essas funcionalidades não existem na versão testada do app.
+- **Testes de Rede**: (Modo avião, Conexão instável), exigiriam manipulação via ADB fora do escopo do Maestro puro, e não foram priorizados para este projeto.
 ---
 
 ## 🚀 Próximos passos (CI/CD)

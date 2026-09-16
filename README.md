@@ -681,7 +681,7 @@ Diante dessas restrições, a decisão consciente foi priorizar a qualidade e a 
 ```
 Essa análise técnica, por si só, já reflete uma etapa importante do planejamento de qualidade: reconhecer as limitações de infraestrutura antes de tentar implementar uma automação que não seria sustentável no formato gratuito do GitHub Actions.
 
-Essas exclusões não representam falhas na cobertura, mas sim decisões conscientes de escopo, tomadas com base na informação disponível em cada momento — uma prática comum e necessária em qualquer ciclo real de testes.
+Essas exclusões não representam falhas na cobertura, mas sim decisões conscientes de escopo, tomadas com base na informação disponível em cada momento, uma prática comum e necessária em qualquer ciclo real de testes.
 
 ---
 

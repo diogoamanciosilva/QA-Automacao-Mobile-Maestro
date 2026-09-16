@@ -699,7 +699,7 @@ Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4
 
 <img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/c6b41a55-e742-485e-aef5-8ef9ac90342e" />
 
-**Busca sem normalização** é a que concentra o maior número de ocorrências (3 bugs: BUG-01, BUG-02, BUG-03). 
+- **Busca sem normalização** é a que concentra o maior número de ocorrências (3 bugs: BUG-01, BUG-02, BUG-03). 
 
 A raiz comum é que a comparação de texto na busca e no login não normaliza maiúsculas, minúsculas e espaços antes de comparar com o valor cadastrado — um problema clássico de ausência de sanitização de input no lado do cliente ou do backend. É a causa mais recorrente e, por isso, a que mais impacta a experiência real do usuário: qualquer variação natural de digitação (Caps Lock ligado, espaço acidental) quebra uma funcionalidade central do app.
 
@@ -707,7 +707,7 @@ A raiz comum é que a comparação de texto na busca e no login não normaliza m
 
 <img width="1075" height="948" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ede1e549-2de8-44ca-b645-8b3876bf816f" />
 
-**Falta de persistência:** de estado agrupa BUG-05 e BUG-06, ambos derivados da mesma origem: a ausência de persistência de sessão entre reinicializações do aplicativo. É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
+- **Falta de persistência:** de estado agrupa BUG-05 e BUG-06, ambos derivados da mesma origem: a ausência de persistência de sessão entre reinicializações do aplicativo. É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
 
 ### 🫆 Causa Raiz 3: Eventos de teclado
 
@@ -719,7 +719,7 @@ A raiz comum é que a comparação de texto na busca e no login não normaliza m
 
 <img width="1078" height="983" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db3b7673-8a4b-4052-a682-c196de54a1c0" />
 
-**Revisão de texto e nomenclatura:** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
+- **Revisão de texto e nomenclatura:** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
 
 ### 🫆 Conclusão
 

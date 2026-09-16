@@ -622,14 +622,14 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 ```
 ---
 
-## 📊 Análise da Suíte e Root Cause Analysis (RCA)
+## 📊 Análise da Suíte e Root Cause Analysis (RCA) 
 
 
-### Distribuição de testes por Feature
+### 📈 Distribuição de testes por Feature
 
 <img width="917" height="590" alt="image" src="https://github.com/user-attachments/assets/fc06234c-fe68-443d-b6e8-1d886072fb5a" />
 
-### Análise Testes por Feature
+### 📈 Análise Testes por Feature
 
 O gráfico apresenta 118 testes automatizados, distribuídos entre cinco Features. 
 
@@ -649,11 +649,11 @@ A distribuição também evidencia uma característica positiva da estratégia: 
 
 Conclusão: a suíte apresenta uma cobertura distribuída por toda a jornada principal do aplicativo, com maior profundidade em Login e Lojas. Para uma evolução da análise, o próximo passo seria relacionar quantidade de testes × bugs encontrados × criticidade, permitindo identificar quais áreas apresentam maior concentração de problemas em relação ao esforço de teste.
 
-### Bugs por Severidade
+### 📈 Bugs por Severidade
 
 <img width="933" height="587" alt="image" src="https://github.com/user-attachments/assets/2cba5c4c-4790-4d3e-a5df-a8e38e3c6f03" />
 
-### Análise Bugs Encontrados por Severidade
+### 📈 Análise Bugs Encontrados por Severidade
 
 O gráfico apresenta 8 bugs encontrados, distribuídos em três níveis:
 
@@ -671,7 +671,7 @@ Também é importante não interpretar a ausência de categorias de maior severi
 
 Desta forma, a distribuição dos testes indica que a suíte conseguiu identificar principalmente problemas de comportamento, validação e qualidade de interface, além de problemas que precisam ser investigados para determinar se representam limitações da aplicação ou defeitos funcionais.
 
-### Conclusão
+### 📈 Conclusão
 
 Dos 8 bugs identificados, 6 estão nas categorias Baixa ou Cosmético/UI (75%), enquanto 2 possuem severidade Média (25%). 
 O resultado demonstra que a suíte possui capacidade de encontrar problemas de diferentes naturezas, mas a severidade deve sempre ser analisada em conjunto com impacto, frequência, alcance e risco para o usuário, e não apenas pela quantidade de ocorrências.
@@ -691,19 +691,19 @@ Para uma análise de causa raiz mais completa, seria necessário cruzar os dados
 
 ## 🔎 Análise de Causa Raiz
 
-### Causa Raiz 1 — Busca sem normalização
+### 🔎 Causa Raiz 1 — Busca sem normalização
 
 <img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/c6b41a55-e742-485e-aef5-8ef9ac90342e" />
 
-### Causa Raiz 2 — Falta de persistência de estado
+### 🔎 Causa Raiz 2 — Falta de persistência de estado
 
 <img width="1075" height="948" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ede1e549-2de8-44ca-b645-8b3876bf816f" />
 
-### Causa Raiz 3 — Eventos de teclado
+### 🔎 Causa Raiz 3 — Eventos de teclado
 
 <img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
 
-### Causa Raiz 4 — Revisão de texto e nomenclatura
+### 🔎 Causa Raiz 4 — Revisão de texto e nomenclatura
 
 <img width="1078" height="983" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db3b7673-8a4b-4052-a682-c196de54a1c0" />
 

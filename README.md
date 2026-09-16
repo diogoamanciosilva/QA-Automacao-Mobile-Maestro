@@ -622,7 +622,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 ## 🧪 Metodologia de teste
 
-A construção da suíte seguiu um processo iterativo, combinando técnicas formais de design de testes com investigação exploratória sempre que o comportamento do aplicativo não estava documentado previamente.
+A construção da suíte qaFood seguiu um processo iterativo, combinando técnicas formais de design de testes com investigação exploratória sempre que o comportamento do aplicativo não estava documentado previamente.
 
 **Particionamento de equivalência e análise de valor-limite**
 

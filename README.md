@@ -669,8 +669,10 @@ Conclusão: dos 8 bugs identificados, 6 estão nas categorias Baixa ou Cosmétic
 
 Os gráficos, analisados em conjunto, mostram duas dimensões diferentes da estratégia utilizada:
 
+```text
 Gráfico A → Onde os testes foram concentrados.
 Gráfico B → Qual foi o perfil de severidade dos problemas encontrados.
+```
 
 Dessa maneira, não é correto concluir que uma Feature é mais problemática apenas por ter recebido mais testes ou apresentado mais bugs. Neste projeto, o escopo foi definido com base exclusivamente no que estava disponível e observável na versão demo do qaFood, sem acesso a dados reais de produção, logs, histórico de incidentes ou casos reportados por usuários.
 

@@ -690,23 +690,40 @@ Dessa maneira, não é correto concluir que uma Feature é mais problemática ap
 
 Para uma análise de causa raiz mais completa, seria necessário cruzar os dados em uma matriz **Feature × quantidade de bugs × severidade × causa raiz**, considerando também fatores como impacto e recorrência. Esse cruzamento permitiria identificar onde há maior concentração de risco na aplicação, evitando conclusões baseadas apenas na quantidade de testes ou defeitos encontrados.
 
-## 🔎 Análise de Causa Raiz
+## 🕵🏻‍♂️ Análise de Causa Raiz
 
-### 🔎 Causa Raiz 1 — Busca sem normalização
+Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4 causas raiz distintas, cada uma revelando uma lacuna específica no processo de desenvolvimento do aplicativo, não apenas um sintoma pontual na interface.
+
+### 🫆 Causa Raiz 1: Busca sem normalização
 
 <img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/c6b41a55-e742-485e-aef5-8ef9ac90342e" />
 
-### 🔎 Causa Raiz 2 — Falta de persistência de estado
+**Busca sem normalização** é a que concentra o maior número de ocorrências (3 bugs: BUG-01, BUG-02, BUG-03). 
+
+A raiz comum é que a comparação de texto na busca e no login não normaliza maiúsculas, minúsculas e espaços antes de comparar com o valor cadastrado — um problema clássico de ausência de sanitização de input no lado do cliente ou do backend. É a causa mais recorrente e, por isso, a que mais impacta a experiência real do usuário: qualquer variação natural de digitação (Caps Lock ligado, espaço acidental) quebra uma funcionalidade central do app.
+
+### 🫆 Causa Raiz 2: Falta de persistência de estado
 
 <img width="1075" height="948" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ede1e549-2de8-44ca-b645-8b3876bf816f" />
 
-### 🔎 Causa Raiz 3 — Eventos de teclado
+**Falta de persistência** de estado agrupa BUG-05 e BUG-06, ambos derivados da mesma origem: a ausência de persistência de sessão entre reinicializações do aplicativo. É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
+
+### 🫆 Causa Raiz 3: Eventos de teclado
+
+**Eventos de teclado** é a única com um único bug associado (BUG-04), mas com uma causa raiz bem definida: o formulário de login escuta apenas o evento de toque no botão, ignorando completamente os eventos de submissão via teclado (Enter/Done). Diferente das outras três causas, essa é classificada diretamente como "Bug funcional", sem ambiguidade pois a submissão via teclado é um comportamento padrão esperado em qualquer formulário mobile bem implementado, não uma decisão de design defensável.
 
 <img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
 
-### 🔎 Causa Raiz 4 — Revisão de texto e nomenclatura
+### 🫆 Causa Raiz 4: Revisão de texto e nomenclatura
 
 <img width="1078" height="983" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db3b7673-8a4b-4052-a682-c196de54a1c0" />
+
+**Revisão de texto e nomenclatura** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
+
+**🫆 Conclusão**
+Das quatro causas raiz, **duas (Causa Raiz 1 e 3)** apontam para o mesmo tipo de lacuna: tratamento insuficiente de entrada do usuário, seja normalização de texto e também na captura de eventos de interação. Isso sugere que o time de desenvolvimento pode se beneficiar de uma revisão mais ampla de como os formulários da aplicação lidam com input do usuário, em vez de tratar cada bug como um caso isolado a corrigir individualmente.
+
+**Já a Causa Raiz 2**, por ser classificada como possível decisão intencional, é a única que exige confirmação externa antes de qualquer ação. Dessa maneira, reforça a importância de não tratar toda observação de QA como bug automático, mas de manter a diferenciação entre "comportamento inesperado" e "comportamento não confirmado como esperado".
 
 ---
 

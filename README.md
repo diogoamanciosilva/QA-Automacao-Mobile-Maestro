@@ -25,7 +25,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🔍 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
 - [📊 Análise da Suíte de Testes ](#-análise-da-suíte-e-root-cause-analysis-rca)
-- [🕵🏻‍♂️ Análise de Causa Raiz](#%E2%80%8D%EF%B8%8F-análise-de-causa-raiz)
+- [🕵🏻‍♂️ Análise de Causa Raiz](#-análise-de-causa-raiz)
 - [🧪 Metodologia de teste](#-metodologia-de-teste)
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
 - [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)

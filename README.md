@@ -629,13 +629,19 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 <img width="917" height="590" alt="image" src="https://github.com/user-attachments/assets/fc06234c-fe68-443d-b6e8-1d886072fb5a" />
 
-As duas primeiras etapas da jornada (Login + Lojas) concentram 60% de toda a suíte (71 de 118 testes), reflexo direto da superfície de validação de entrada (formatos, capitalização, espaços, caracteres especiais) presente nessas telas.
-
 ### Análise Testes por Feature
 
-O gráfico apresenta 118 testes automatizados, distribuídos entre cinco Features. A maior concentração está em Login (36 testes — 31%) e Lojas (35 testes — 30%), que juntas representam 71 testes, aproximadamente 60% da suíte.
+O gráfico apresenta 118 testes automatizados, distribuídos entre cinco Features. 
 
-Essa distribuição indica uma estratégia de cobertura mais intensa nos pontos de entrada e navegação inicial da aplicação. A Feature Sacola possui 18 testes (15%), Cardápio 17 (14%) e Pedido 12 (10%), formando uma cobertura progressivamente menor nas etapas posteriores da jornada.
+```text
+A maior concentração está em Login (36 testes — 31%) e Lojas (35 testes — 30%), que juntas representam 71 testes, aproximadamente 60% da suíte.
+```
+
+Essa distribuição indica uma estratégia de cobertura mais intensa nos pontos de entrada e navegação inicial da aplicação. 
+
+```text
+A Feature Sacola possui 18 testes (15%), Cardápio 17 (14%) e Pedido 12 (10%), formando uma cobertura progressivamente menor nas etapas posteriores da jornada.
+```
 
 Do ponto de vista de Root Cause Analysis, a quantidade de testes por Feature não deve ser interpretada diretamente como quantidade de problemas. Ela representa principalmente onde a cobertura de testes foi concentrada. Portanto, Login e Lojas terem mais testes não significa necessariamente que sejam as áreas mais defeituosas.
 
@@ -651,9 +657,11 @@ Conclusão: a suíte apresenta uma cobertura distribuída por toda a jornada pri
 
 O gráfico apresenta 8 bugs encontrados, distribuídos em três níveis:
 
+```text
 Baixa: 4 bugs — 50%
 Média: 2 bugs — 25%
 Cosmético / UI: 2 bugs — 25%
+```
 
 A maior concentração está em problemas de baixa severidade, responsáveis por metade dos achados. Outros 25% possuem severidade média e os 25% restantes estão relacionados a aspectos cosméticos ou de interface.
 

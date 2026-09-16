@@ -1,3 +1,4 @@
+<img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/24db2266-7142-4f74-adcc-5cabbf7bb800" />
 ## 🤖 Automação Mobile Maestro (qaFood)
 
 <img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
@@ -640,19 +641,19 @@ As duas primeiras etapas da jornada (Login + Lojas) concentram 60% de toda a su�
 
 ### Causa Raiz 1 — Busca sem normalização
 
-[Mermaid 1]
+<img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/c6b41a55-e742-485e-aef5-8ef9ac90342e" />
 
 ### Causa Raiz 2 — Falta de persistência de estado
 
-[Mermaid 2]
+<img width="1075" height="948" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ede1e549-2de8-44ca-b645-8b3876bf816f" />
 
 ### Causa Raiz 3 — Eventos de teclado
 
-[Mermaid 3]
+<img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
 
 ### Causa Raiz 4 — Revisão de texto e nomenclatura
 
-[Mermaid 4]
+<img width="1078" height="983" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db3b7673-8a4b-4052-a682-c196de54a1c0" />
 
 ---
 

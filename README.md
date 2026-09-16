@@ -623,7 +623,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 ```
 ---
 
-## 📊 Análise da Suíte e Root Cause Analysis (RCA) 
+## 📊 Análise da Suíte
 
 
 ### 📈 Distribuição de Testes por Feature
@@ -690,7 +690,7 @@ Dessa maneira, não é correto concluir que uma Feature é mais problemática ap
 
 Para uma análise de causa raiz mais completa, seria necessário cruzar os dados em uma matriz **Feature × quantidade de bugs × severidade × causa raiz**, considerando também fatores como impacto e recorrência. Esse cruzamento permitiria identificar onde há maior concentração de risco na aplicação, evitando conclusões baseadas apenas na quantidade de testes ou defeitos encontrados.
 
-## 🕵🏻‍♂️ Análise de Causa Raiz
+##  🕵🏻‍♂️ Root Cause Analysis (RCA) 
 
 Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4 causas raiz distintas, cada uma revelando uma lacuna específica no processo de desenvolvimento do aplicativo, não apenas um sintoma pontual na interface.
 
@@ -720,10 +720,11 @@ A raiz comum é que a comparação de texto na busca e no login não normaliza m
 
 **Revisão de texto e nomenclatura** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
 
-**🫆 Conclusão**
+### 🫆 Conclusão
+
 Das quatro causas raiz, **duas (Causa Raiz 1 e 3)** apontam para o mesmo tipo de lacuna: tratamento insuficiente de entrada do usuário, seja normalização de texto e também na captura de eventos de interação. Isso sugere que o time de desenvolvimento pode se beneficiar de uma revisão mais ampla de como os formulários da aplicação lidam com input do usuário, em vez de tratar cada bug como um caso isolado a corrigir individualmente.
 
-**Já a Causa Raiz 2**, por ser classificada como possível decisão intencional, é a única que exige confirmação externa antes de qualquer ação. Dessa maneira, reforça a importância de não tratar toda observação de QA como bug automático, mas de manter a diferenciação entre "comportamento inesperado" e "comportamento não confirmado como esperado".
+Já a **Causa Raiz 2**, por ser classificada como possível decisão intencional, é a única que exige confirmação externa antes de qualquer ação. Dessa maneira, reforça a importância de não tratar toda observação de QA como bug automático, mas de manter a diferenciação entre "comportamento inesperado" e "comportamento não confirmado como esperado".
 
 ---
 

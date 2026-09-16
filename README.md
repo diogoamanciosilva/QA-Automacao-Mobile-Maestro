@@ -624,7 +624,10 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 ## 📊 Análise da Suíte e Root Cause Analysis (RCA)
 
 
+### Distribuição de testes por Feature
+
 graph TD
+
     A[Causa Raiz 1:<br/>Comparação de texto não normaliza<br/>maiúsculas/minúsculas nem espaços] --> BUG01[BUG-01: Busca falha com<br/>palavra em MAIÚSCULAS]
     A --> BUG02[BUG-02: Busca falha<br/>100% minúsculo]
     A --> BUG03[BUG-03: Campos não fazem<br/>trim de espaços nas pontas]
@@ -641,8 +644,6 @@ graph TD
     style B fill:#ffe0b3
     style C fill:#fff5cc
     style D fill:#e6f2ff
-
-
 
 
 

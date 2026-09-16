@@ -671,7 +671,9 @@ Também é importante não interpretar a ausência de categorias de maior severi
 
 Desta forma, a distribuição dos testes indica que a suíte conseguiu identificar principalmente problemas de comportamento, validação e qualidade de interface, além de problemas que precisam ser investigados para determinar se representam limitações da aplicação ou defeitos funcionais.
 
-Conclusão: dos 8 bugs identificados, 6 estão nas categorias Baixa ou Cosmético/UI (75%), enquanto 2 possuem severidade Média (25%). O resultado demonstra que a suíte possui capacidade de encontrar problemas de diferentes naturezas, mas a severidade deve sempre ser analisada em conjunto com impacto, frequência, alcance e risco para o usuário, e não apenas pela quantidade de ocorrências.
+**Conclusão**
+Dos 8 bugs identificados, 6 estão nas categorias Baixa ou Cosmético/UI (75%), enquanto 2 possuem severidade Média (25%). 
+O resultado demonstra que a suíte possui capacidade de encontrar problemas de diferentes naturezas, mas a severidade deve sempre ser analisada em conjunto com impacto, frequência, alcance e risco para o usuário, e não apenas pela quantidade de ocorrências.
 
 ### Análise Relação entre os dois gráficos
 

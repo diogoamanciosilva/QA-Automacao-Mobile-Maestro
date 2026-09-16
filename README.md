@@ -718,8 +718,7 @@ A construção da suíte qaFood seguiu um processo iterativo, combinando técnic
 
 Foram aplicados de forma sistemática, principalmente na Feature Login e na Feature Lojas: campos testados com valores válidos, valores vazios, valores no limite de tamanho (e-mails e senhas muito longos) e valores fora do padrão esperado (caracteres especiais, espaços em branco isolados ou combinados).
 
-**Teste negativo (negative testing)** 
-Foi usado extensivamente para garantir que o aplicativo rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, cupons inválidos e tentativas de finalizar pedido sem forma de pagamento selecionada.
+- **Teste negativo:** Foi usado extensivamente para garantir que o aplicativo rejeita corretamente entradas inválidas sem quebrar — credenciais incorretas, buscas sem resultado, cupons inválidos e tentativas de finalizar pedido sem forma de pagamento selecionada.
 
 **Teste exploratório** 
 Foi a técnica central para descobrir comportamentos não óbvios do aplicativo, como a sensibilidade da busca a texto em maiúsculas. Esse bug específico não foi encontrado por um caso de teste pré-planejado, mas por uma investigação incremental: cada resultado inesperado gerava uma nova hipótese, testada isoladamente até isolar exatamente o padrão do problema (qualquer palavra inteira em maiúsculas, independentemente da posição no termo buscado).

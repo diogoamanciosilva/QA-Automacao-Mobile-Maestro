@@ -631,12 +631,50 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 As duas primeiras etapas da jornada (Login + Lojas) concentram 60% de toda a suíte (71 de 118 testes), reflexo direto da superfície de validação de entrada (formatos, capitalização, espaços, caracteres especiais) presente nessas telas.
 
+### Análise Testes por Feature
+
+O gráfico apresenta 118 testes automatizados, distribuídos entre cinco Features. A maior concentração está em Login (36 testes — 31%) e Lojas (35 testes — 30%), que juntas representam 71 testes, aproximadamente 60% da suíte.
+
+Essa distribuição indica uma estratégia de cobertura mais intensa nos pontos de entrada e navegação inicial da aplicação. A Feature Sacola possui 18 testes (15%), Cardápio 17 (14%) e Pedido 12 (10%), formando uma cobertura progressivamente menor nas etapas posteriores da jornada.
+
+Do ponto de vista de Root Cause Analysis, a quantidade de testes por Feature não deve ser interpretada diretamente como quantidade de problemas. Ela representa principalmente onde a cobertura de testes foi concentrada. Portanto, Login e Lojas terem mais testes não significa necessariamente que sejam as áreas mais defeituosas.
+
+A distribuição também evidencia uma característica positiva da estratégia: os testes não estão concentrados exclusivamente no fluxo feliz. Nas Features foram explorados cenários de validação, casos negativos, navegação, persistência de estado, rotação de tela, ciclo de vida e interações repetidas, aumentando a capacidade de identificar comportamentos inconsistentes.
+
+Conclusão: a suíte apresenta uma cobertura distribuída por toda a jornada principal do aplicativo, com maior profundidade em Login e Lojas. Para uma evolução da análise, o próximo passo seria relacionar quantidade de testes × bugs encontrados × criticidade, permitindo identificar quais áreas apresentam maior concentração de problemas em relação ao esforço de teste.
 
 ### Bugs por Severidade
 
 <img width="933" height="587" alt="image" src="https://github.com/user-attachments/assets/2cba5c4c-4790-4d3e-a5df-a8e38e3c6f03" />
 
+### Análise Bugs Encontrados por Severidade
 
+O gráfico apresenta 8 bugs encontrados, distribuídos em três níveis:
+
+Baixa: 4 bugs — 50%
+Média: 2 bugs — 25%
+Cosmético / UI: 2 bugs — 25%
+
+A maior concentração está em problemas de baixa severidade, responsáveis por metade dos achados. Outros 25% possuem severidade média e os 25% restantes estão relacionados a aspectos cosméticos ou de interface.
+
+Sob a perspectiva de Root Cause Analysis, o dado mais importante é que os problemas encontrados não estão concentrados exclusivamente em uma única camada. A análise realizada anteriormente identificou ocorrências relacionadas a busca e normalização de dados, persistência de estado, interação por teclado e revisão de textos/nomenclatura, mostrando diferentes possíveis origens dos problemas.
+
+Também é importante não interpretar a ausência de categorias de maior severidade como prova de que não existem problemas críticos na aplicação. O gráfico representa os 8 bugs identificados pela suíte analisada. Portanto, ele demonstra o perfil dos achados encontrados durante esse escopo de testes, e não necessariamente o risco absoluto de toda a aplicação.
+
+Desta forma, a distribuição dos testes indica que a suíte conseguiu identificar principalmente problemas de comportamento, validação e qualidade de interface, além de problemas que precisam ser investigados para determinar se representam limitações da aplicação ou defeitos funcionais.
+
+Conclusão: dos 8 bugs identificados, 6 estão nas categorias Baixa ou Cosmético/UI (75%), enquanto 2 possuem severidade Média (25%). O resultado demonstra que a suíte possui capacidade de encontrar problemas de diferentes naturezas, mas a severidade deve sempre ser analisada em conjunto com impacto, frequência, alcance e risco para o usuário, e não apenas pela quantidade de ocorrências.
+
+### Análise Relação entre os dois gráficos
+
+Os gráficos, analisados em conjunto, mostram duas dimensões diferentes da estratégia utilizada:
+
+Gráfico A → Onde os testes foram concentrados.
+Gráfico B → Qual foi o perfil de severidade dos problemas encontrados.
+
+Dessa maneira, não é correto concluir que uma Feature é mais problemática apenas por ter recebido mais testes ou apresentado mais bugs. Neste projeto, o escopo foi definido com base exclusivamente no que estava disponível e observável na versão demo do qaFood, sem acesso a dados reais de produção, logs, histórico de incidentes ou casos reportados por usuários.
+
+Para uma análise de causa raiz mais completa, seria necessário cruzar os dados em uma matriz **Feature × quantidade de bugs × severidade × causa raiz**, considerando também fatores como impacto e recorrência. Esse cruzamento permitiria identificar onde há maior concentração de risco na aplicação, evitando conclusões baseadas apenas na quantidade de testes ou defeitos encontrados.
 
 ## 🔎 Análise de Causa Raiz
 

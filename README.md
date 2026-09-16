@@ -24,7 +24,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🔍 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
 - [🔍 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
-- [📊 Análise da Suíte ](#-análise-da-suíte-e-root-cause-analysis-rca)
+- [📊 Análise da Suíte de Testes ](#-análise-da-suíte-e-root-cause-analysis-rca)
 - [🕵🏻‍♂️ Análise de Causa Raiz](#%E2%80%8D%EF%B8%8F-análise-de-causa-raiz)
 - [🧪 Metodologia de teste](#-metodologia-de-teste)
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
@@ -624,7 +624,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 ```
 ---
 
-## 📊 Análise da Suíte
+## 📊 Análise da Suíte de Testes
 
 
 ### 📈 Distribuição de Testes por Feature

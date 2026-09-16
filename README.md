@@ -699,9 +699,10 @@ Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4
 
 <img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/c6b41a55-e742-485e-aef5-8ef9ac90342e" />
 
+
 - **Busca sem normalização** é a que concentra o maior número de ocorrências (3 bugs: BUG-01, BUG-02, BUG-03). 
 
-A raiz comum é que a comparação de texto na busca e no login não normaliza maiúsculas, minúsculas e espaços antes de comparar com o valor cadastrado — um problema clássico de ausência de sanitização de input no lado do cliente ou do backend. É a causa mais recorrente e, por isso, a que mais impacta a experiência real do usuário: qualquer variação natural de digitação (Caps Lock ligado, espaço acidental) quebra uma funcionalidade central do app.
+A raiz comum é que a comparação de texto na busca e no login não normaliza maiúsculas, minúsculas e espaços antes de comparar com o valor cadastrado, um problema clássico de ausência de sanitização de input no lado do cliente ou do backend. É a causa mais recorrente e, por isso, a que mais impacta a experiência real do usuário: qualquer variação natural de digitação (Caps Lock ligado, espaço acidental) quebra uma funcionalidade central do app.
 
 ### 🫆 Causa Raiz 2: Falta de persistência de estado
 

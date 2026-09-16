@@ -626,7 +626,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 ## 📊 Análise da Suíte e Root Cause Analysis (RCA) 
 
 
-### 📈 Distribuição de testes por Feature
+### 📈 Distribuição de Testes por Feature
 
 <img width="917" height="590" alt="image" src="https://github.com/user-attachments/assets/fc06234c-fe68-443d-b6e8-1d886072fb5a" />
 
@@ -682,8 +682,8 @@ O resultado demonstra que a suíte possui capacidade de encontrar problemas de d
 Os gráficos, analisados em conjunto, mostram duas dimensões diferentes da estratégia utilizada:
 
 ```text
-Gráfico A → Onde os testes foram concentrados.
-Gráfico B → Qual foi o perfil de severidade dos problemas encontrados.
+Gráfico Testes por Feature → Onde os testes foram concentrados.
+Gráfico Bugs por Severidade → Qual foi o perfil de severidade dos problemas encontrados.
 ```
 
 Dessa maneira, não é correto concluir que uma Feature é mais problemática apenas por ter recebido mais testes ou apresentado mais bugs. Neste projeto, o escopo foi definido com base exclusivamente no que estava disponível e observável na versão demo do qaFood, sem acesso a dados reais de produção, logs, histórico de incidentes ou casos reportados por usuários.

@@ -147,7 +147,7 @@ Um resumo rápido para quem está clonando este repositório pela primeira vez. 
    ./MaestroStudio.AppImage
 ```
 
-> 🏆 **Se o passo 3 rodar sem erro de "Flow path does not exist" e o login acontecer no emulador, seu ambiente está pronto.**
+> ⚠️ **Importante:** Se o passo 3 rodar sem erro de "Flow path does not exist" e o login acontecer no emulador, seu ambiente está pronto.
 
 ---
 
@@ -223,7 +223,7 @@ adb connect <IP>:25555
 adb devices
 ```
 
-> ⚠️ O IP não é fixo e pode mudar a cada reinício do Windows/WSL. Descubra o valor atual com:
+> ⚠️ **Importante:** O IP não é fixo e pode mudar a cada reinício do Windows/WSL. Descubra o valor atual com:
 >
 > ```bash
 > ip route show default | awk '{print $3}'
@@ -250,7 +250,7 @@ cd ~/Downloads
 
 Selecione o device `<IP>:25555` na lista.
 
-> ⚠️ O streaming de tela ao vivo dentro do Studio não funciona neste ambiente devido a um erro de gRPC pela rede. Os testes continuam funcionando normalmente. Para acompanhamento visual, utilize a janela do emulador no Windows.
+> ⚠️ **Importante:** O streaming de tela ao vivo dentro do Studio não funciona neste ambiente devido a um erro de gRPC pela rede. Os testes continuam funcionando normalmente. Para acompanhamento visual, utilize a janela do emulador no Windows.
 
 ### Ordem diária
 

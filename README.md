@@ -734,11 +734,11 @@ Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4
 
 ### 🫆 Causa Raiz 3: Eventos de teclado
 
+<img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
+
 - **Eventos de teclado:** é a única com um único bug associado (BUG-04), mas com uma causa raiz bem definida — o formulário de login escuta apenas o evento de toque no botão, ignorando completamente os eventos de submissão via teclado (Enter/Done).
 
 - Diferente das outras três causas, essa é classificada diretamente como "Bug funcional", sem ambiguidade pois a submissão via teclado é um comportamento padrão esperado em qualquer formulário mobile bem implementado, não uma decisão de design defensável.
-
-<img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
 
 ### 🫆 Causa Raiz 4: Revisão de texto e nomenclatura
 
@@ -750,9 +750,9 @@ Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4
 
 ### 🫆 Conclusão
 
-Das quatro causas raiz, **duas (Causa Raiz 1 e 3)** apontam para o mesmo tipo de lacuna: tratamento insuficiente de entrada do usuário, seja normalização de texto e também na captura de eventos de interação. Isso sugere que o time de desenvolvimento pode se beneficiar de uma revisão mais ampla de como os formulários da aplicação lidam com input do usuário, em vez de tratar cada bug como um caso isolado a corrigir individualmente.
+- Das quatro causas raiz, **duas (Causa Raiz 1 e 3)** apontam para o mesmo tipo de lacuna: tratamento insuficiente de entrada do usuário, seja normalização de texto e também na captura de eventos de interação. Isso sugere que o time de desenvolvimento pode se beneficiar de uma revisão mais ampla de como os formulários da aplicação lidam com input do usuário, em vez de tratar cada bug como um caso isolado a corrigir individualmente.
 
-Já a **Causa Raiz 2**, por ser classificada como possível decisão intencional, é a única que exige confirmação externa antes de qualquer ação. Dessa maneira, reforça a importância de não tratar toda observação de QA como bug automático, mas de manter a diferenciação entre "comportamento inesperado" e "comportamento não confirmado como esperado".
+- Já a **Causa Raiz 2**, por ser classificada como possível decisão intencional, é a única que exige confirmação externa antes de qualquer ação. Dessa maneira, reforça a importância de não tratar toda observação de QA como bug automático, mas de manter a diferenciação entre "comportamento inesperado" e "comportamento não confirmado como esperado".
 
 ---
 

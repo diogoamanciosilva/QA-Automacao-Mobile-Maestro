@@ -276,7 +276,7 @@ Cada teste que depende de login reutiliza o mesmo flow base por meio de `runFlow
     file: "../1 - Feature_Login/A) 1. Login com credenciais corretas.yaml"
 ```
 
-> 📌 O caminho do `runFlow` é sempre **relativo ao arquivo que o chama**. Testes salvos dentro de uma subpasta de Feature utilizam `../1 - Feature_Login/...`. Testes salvos diretamente na raiz `Maestro/` utilizam o caminho sem `../`.
+> ⚠️ **Importante:** O caminho do `runFlow` é sempre **relativo ao arquivo que o chama**. Testes salvos dentro de uma subpasta de Feature utilizam `../1 - Feature_Login/...`. Testes salvos diretamente na raiz `Maestro/` utilizam o caminho sem `../`.
 
 ---
 

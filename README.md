@@ -616,7 +616,7 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 | BUG-04 | A tecla Enter/Done do teclado não submete o formulário de login — apenas o toque físico no botão "Entrar" funciona | Baixa | Preencher e-mail e senha e pressionar Enter no teclado, sem tocar no botão | `E) 1` — Feature Login |
 | BUG-05 | A sessão de login não é mantida ao fechar e reabrir o aplicativo, mesmo sem limpeza de estado (`clearState: false`) — o usuário é sempre redirecionado para a tela de login | Baixa | Fazer login, fechar o app via `launchApp` sem limpar estado, e reabrir | `H) 1` — Feature Lojas |
 | BUG-06 | O conteúdo da sacola (itens adicionados) é perdido ao fechar e reabrir o aplicativo, exigindo novo login e nova seleção de itens | Baixa | Adicionar um item ao carrinho, fechar o app e reabrir | `G) 3` — Feature Sacola |
-| BUG-07 | Erro de digitação no texto exibido na tela de acompanhamento do pedido: "Previsão de **entrega**" (faltando o "n" de "entrega") | Cosmético (Interface/UI) | Finalizar um pedido e visualizar a tela "Pedido realizado" | `E) 1`, `G) 1` — Feature Pedido |
+| BUG-07 | Erro de digitação no texto exibido na tela de acompanhamento do pedido: "Previsão de **etrega**" (faltando o "n" de "entrega") | Cosmético (Interface/UI) | Finalizar um pedido e visualizar a tela "Pedido realizado" | `E) 1`, `G) 1` — Feature Pedido |
 | BUG-08 | Erro de digitação no `id` do botão de adicionar item ao cardápio: `add-item-buttom` (com "m" no lugar de "n") — não impede o funcionamento, mas é uma inconsistência de nomenclatura no código do app | Cosmético (Interface/UI) | Inspecionar o elemento via `maestro hierarchy` na tela de Cardápio | Confirmado em todos os testes que interagem com o botão de adicionar item |
 
 ---

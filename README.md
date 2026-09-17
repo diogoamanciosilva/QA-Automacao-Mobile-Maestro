@@ -27,8 +27,8 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🔍 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
 - [🔍 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
-- [📊 Análise da Suíte de Testes](#-análise-da-suíte-de-testes)
 - [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)
+- [📊 Análise da Suíte de Testes](#-análise-da-suíte-de-testes)
 - [🕵🏻‍♂️ Root Cause Analysis (RCA)](#%E2%80%8D%EF%B8%8F-root-cause-analysis-rca)
 - [🧪 Metodologia de teste](#-metodologia-de-teste)
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
@@ -627,6 +627,24 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 ```
 ---
 
+## 🔗 Bug × Feature × Causa Raiz
+
+| Bug | Feature | Severidade | Causa Raiz |
+|---|---|---|---|
+| BUG-01 | Lojas | Média | Busca sem normalização |
+| BUG-02 | Lojas | Média | Busca sem normalização |
+| BUG-03 | Login / Lojas | Baixa | Busca sem normalização |
+| BUG-04 | Login | Baixa | Eventos de teclado |
+| BUG-05 | Lojas | Baixa | Falta de persistência de estado |
+| BUG-06 | Sacola | Baixa | Falta de persistência de estado |
+| BUG-07 | Pedido | Cosmético (UI) | Revisão de texto e nomenclatura |
+| BUG-08 | Cardápio | Cosmético (UI) | Revisão de texto e nomenclatura |
+
+Essa visão consolidada evidencia que **nenhuma Feature concentra sozinha a maioria dos bugs**, eles estão distribuídos ao longo de toda a jornada (Login, Lojas, Sacola, Cardápio e Pedido), enquanto as causas raiz, por outro lado, **se repetem entre Features diferentes** (a mesma causa "Busca sem normalização" afeta tanto Login quanto Lojas). 
+
+Isso reforça a leitura já feita na análise de RCA: os problemas não são falhas pontuais de tela, mas padrões de implementação que atravessam múltiplas partes do aplicativo.
+
+---
 ## 📊 Análise da Suíte de Testes
 
 
@@ -702,20 +720,23 @@ Os 8 bugs documentados na suíte não são falhas isoladas: eles se agrupam em 4
 
 <img width="1598" height="988" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/c6b41a55-e742-485e-aef5-8ef9ac90342e" />
 
+- **Busca sem normalização:** concentra o maior número de ocorrências (3 bugs: BUG-01, BUG-02, BUG-03).
 
-- **Busca sem normalização** é a que concentra o maior número de ocorrências (3 bugs: BUG-01, BUG-02, BUG-03). 
-
-A raiz comum é que a comparação de texto na busca e no login não normaliza maiúsculas, minúsculas e espaços antes de comparar com o valor cadastrado, um problema clássico de ausência de sanitização de input no lado do cliente ou do backend. É a causa mais recorrente e, por isso, a que mais impacta a experiência real do usuário: qualquer variação natural de digitação (Caps Lock ligado, espaço acidental) quebra uma funcionalidade central do app.
+- A raiz comum é que a comparação de texto na busca e no login não normaliza maiúsculas, minúsculas e espaços antes de comparar com o valor cadastrado, um problema clássico de ausência de sanitização de input no lado do cliente ou do backend. É a causa mais recorrente e, por isso, a que mais impacta a experiência real do usuário: qualquer variação natural de digitação (Caps Lock ligado, espaço acidental) quebra uma funcionalidade central do app.
 
 ### 🫆 Causa Raiz 2: Falta de persistência de estado
 
 <img width="1075" height="948" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/ede1e549-2de8-44ca-b645-8b3876bf816f" />
 
-- **Falta de persistência:** de estado agrupa BUG-05 e BUG-06, ambos derivados da mesma origem: a ausência de persistência de sessão entre reinicializações do aplicativo. É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
+- **Falta de persistência de estado:** agrupa BUG-05 e BUG-06, ambos derivados da mesma origem — a ausência de persistência de sessão entre reinicializações do aplicativo.
+
+- É importante notar que essa causa raiz foi classificada como "Limitação / possível bug", diferente da Causa Raiz 1, que é bug de UX confirmado, aqui existe a possibilidade de ser uma decisão arquitetural intencional (por exemplo, política de segurança que força reautenticação). Isso está corretamente sinalizado nos dois cards e deveria ser validado com o time de desenvolvimento antes de ser tratado como defeito a corrigir.
 
 ### 🫆 Causa Raiz 3: Eventos de teclado
 
-- **Eventos de teclado:** é a única com um único bug associado (BUG-04), mas com uma causa raiz bem definida: o formulário de login escuta apenas o evento de toque no botão, ignorando completamente os eventos de submissão via teclado (Enter/Done). Diferente das outras três causas, essa é classificada diretamente como "Bug funcional", sem ambiguidade pois a submissão via teclado é um comportamento padrão esperado em qualquer formulário mobile bem implementado, não uma decisão de design defensável.
+- **Eventos de teclado:** é a única com um único bug associado (BUG-04), mas com uma causa raiz bem definida — o formulário de login escuta apenas o evento de toque no botão, ignorando completamente os eventos de submissão via teclado (Enter/Done).
+
+- Diferente das outras três causas, essa é classificada diretamente como "Bug funcional", sem ambiguidade pois a submissão via teclado é um comportamento padrão esperado em qualquer formulário mobile bem implementado, não uma decisão de design defensável.
 
 <img width="550" height="948" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/1e99d03f-5c44-4f8f-8b5c-b43e5f5fa3dc" />
 
@@ -723,7 +744,9 @@ A raiz comum é que a comparação de texto na busca e no login não normaliza m
 
 <img width="1078" height="983" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db3b7673-8a4b-4052-a682-c196de54a1c0" />
 
-- **Revisão de texto e nomenclatura:** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica: ausência de uma etapa de QA de copy/nomenclatura antes do build. Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
+- **Revisão de texto e nomenclatura:** agrupa os dois bugs cosméticos (BUG-07, BUG-08), com uma causa raiz de processo, não de lógica — ausência de uma etapa de QA de copy/nomenclatura antes do build.
+
+- Vale notar que essa é a única causa raiz que produz dois tipos de classificação diferentes a partir da mesma origem "Bug de conteúdo/UI" (o typo visível ao usuário) e "Problema de nomenclatura" (o tipo interno no código, invisível ao usuário final, mas relevante para manutenibilidade).
 
 ### 🫆 Conclusão
 
@@ -768,6 +791,8 @@ Isso significa que alguns cenários ficaram intencionalmente fora do escopo por 
 - **Categorias/abas do cardápio**: Não foi confirmado se o cardápio possui navegação por categorias (ex: "Lanches", "Bebidas") ou se é uma lista única rolável.
 - **Login social e Funcionalidade de mostrar/ocultar senha**: Confirmado que essas funcionalidades não existem na versão testada do app.
 - **Testes de Rede**: (Modo avião, Conexão instável), exigiriam manipulação via ADB fora do escopo do Maestro puro, e não foram priorizados para este projeto.
+
+- Essas exclusões não representam falhas na cobertura, mas sim decisões conscientes de escopo, tomadas com base na informação disponível em cada momento, uma prática comum e necessária em qualquer ciclo real de testes.
 ---
 
 ## 🚀 Próximos passos (CI/CD)
@@ -789,8 +814,6 @@ Diante dessas restrições, a decisão consciente foi priorizar a qualidade e a 
 4. Notificação de falhas via integração com Slack ou e-mail.
 ```
 Essa análise técnica, por si só, já reflete uma etapa importante do planejamento de qualidade: reconhecer as limitações de infraestrutura antes de tentar implementar uma automação que não seria sustentável no formato gratuito do GitHub Actions.
-
-Essas exclusões não representam falhas na cobertura, mas sim decisões conscientes de escopo, tomadas com base na informação disponível em cada momento, uma prática comum e necessária em qualquer ciclo real de testes.
 
 ---
 

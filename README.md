@@ -670,7 +670,8 @@ A Feature Sacola possui 18 testes (15%), Cardápio 17 (14%) e Pedido 12 (10%), f
 
 A distribuição também evidencia uma característica positiva da estratégia: os testes não estão concentrados exclusivamente no fluxo feliz. Nas Features foram explorados cenários de validação, casos negativos, navegação, persistência de estado, rotação de tela, ciclo de vida e interações repetidas, aumentando a capacidade de identificar comportamentos inconsistentes.
 
-Conclusão: a suíte apresenta uma cobertura distribuída por toda a jornada principal do aplicativo, com maior profundidade em Login e Lojas. Para uma evolução da análise, o próximo passo seria relacionar quantidade de testes × bugs encontrados × criticidade, permitindo identificar quais áreas apresentam maior concentração de problemas em relação ao esforço de teste.
+### 📈 Conclusão
+A suíte apresenta uma cobertura distribuída por toda a jornada principal do aplicativo, com maior profundidade em Login e Lojas. Para uma evolução da análise, o próximo passo seria relacionar quantidade de testes × bugs encontrados × criticidade, permitindo identificar quais áreas apresentam maior concentração de problemas em relação ao esforço de teste.
 
 ### 📈 Bugs por Severidade
 

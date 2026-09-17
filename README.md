@@ -9,11 +9,14 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 
 ---
 
-## 📑 Índice
+  ## 📑 Índice
 
-- [🎯 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
-- [⚙️ Estrutura da Suíte de Testes qaFood](#️-estrutura-da-suíte-de-testes-qafood)
 - [📱 Sobre o app](#-sobre-o-app)
+- [🤖 Maestro](#-maestro)
+- [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
+- [⚙️ Estrutura da Suíte de Testes qaFood](#️-estrutura-da-suíte-de-testes-qafood)
+- [🎯 Tipos de teste realizados na suíte](#-tipos-de-teste-realizados-na-suíte)
+- [🚀 Como executar este projeto](#-como-executar-este-projeto)
 - [🛠️ Ambiente e rotina diária](#️-ambiente-e-rotina-diária)
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
@@ -24,13 +27,13 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🔍 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
 - [🔍 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
-- [📊 Análise da Suíte de Testes ](#-análise-da-suíte-de-testes)
-- [🕵🏻‍♂️ Análise de Causa Raiz](#%E2%80%8D%EF%B8%8F-root-cause-analysis-rca)
+- [📊 Análise da Suíte de Testes](#-análise-da-suíte-de-testes)
+- [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)
+- [🕵🏻‍♂️ Root Cause Analysis (RCA)](#%E2%80%8D%EF%B8%8F-root-cause-analysis-rca)
 - [🧪 Metodologia de teste](#-metodologia-de-teste)
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
 - [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
 - [💡 Aprendizados técnicos](#-aprendizados-técnicos)
-- [🏷️ Tecnologias utilizadas](#️-tecnologias-utilizadas)
 - [✅ Contato](#-contato)
   
 ---

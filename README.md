@@ -147,7 +147,7 @@ Um resumo rápido para quem está clonando este repositório pela primeira vez. 
    ./MaestroStudio.AppImage
 ```
 
-🏆 **Se o passo 3 rodar sem erro de "Flow path does not exist" e o login acontecer no emulador, seu ambiente está pronto.**
+> 🏆 **Se o passo 3 rodar sem erro de "Flow path does not exist" e o login acontecer no emulador, seu ambiente está pronto.**
 
 ---
 

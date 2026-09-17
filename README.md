@@ -642,6 +642,7 @@ Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comporta
 
 Essa visão consolidada evidencia que **nenhuma Feature concentra sozinha a maioria dos bugs**, eles estão distribuídos ao longo de toda a jornada (Login, Lojas, Sacola, Cardápio e Pedido), enquanto as causas raiz, por outro lado, **se repetem entre Features diferentes** (a mesma causa "Busca sem normalização" afeta tanto Login quanto Lojas). 
 
+### 🔗 Conclusão
 Isso reforça a leitura já feita na análise de RCA: os problemas não são falhas pontuais de tela, mas padrões de implementação que atravessam múltiplas partes do aplicativo.
 
 ---

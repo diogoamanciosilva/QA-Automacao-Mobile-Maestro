@@ -801,7 +801,7 @@ Isso significa que alguns cenários ficaram intencionalmente fora do escopo por 
 
 Atualmente, a suíte é executada manualmente, com o emulador Android rodando localmente no Windows e os testes disparados via Maestro CLI a partir do WSL. A automação da execução via **GitHub Actions** foi avaliada como evolução natural do projeto, mas não foi implementada nesta fase por uma limitação técnica real, não por falta de planejamento:
 
-O Maestro depende de um **emulador Android ativo** (ou um dispositivo físico conectado) para executar qualquer teste — ele não interage com o app de forma "headless" ou simulada. Rodar um emulador Android dentro de um runner padrão do GitHub Actions exige:
+O Maestro depende de um **emulador Android ativo** (ou um dispositivo físico conectado) para executar qualquer teste, ele não interage com o app de forma "headless" ou simulada. Rodar um emulador Android dentro de um runner padrão do GitHub Actions exige:
 
 - Um runner com suporte a virtualização aninhada e aceleração de hardware (KVM), o que limita as opções gratuitas do GitHub Actions e normalmente exige runners self-hosted ou serviços de nuvem especializados em Android (como Firebase Test Lab ou runners customizados com GPU).
 - Tempo de boot do emulador consideravelmente mais alto em ambiente de CI do que localmente, aumentando o tempo total de pipeline e, consequentemente, o custo de execução.

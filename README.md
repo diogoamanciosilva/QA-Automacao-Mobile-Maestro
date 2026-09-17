@@ -213,7 +213,7 @@ Resultado esperado:
 package:com.qazandoqafood
 ```
 
-> 📌 **Importante:** depois que o aplicativo estiver instalado, o arquivo `.apk` não precisa ser utilizado novamente para executar os testes. O Maestro interage diretamente com o aplicativo por meio do `appId: com.qazandoqafood`.
+> ⚠️ **Importante:** depois que o aplicativo estiver instalado, o arquivo `.apk` não precisa ser utilizado novamente para executar os testes. O Maestro interage diretamente com o aplicativo por meio do `appId: com.qazandoqafood`.
 
 ### 3. Conectar o WSL ao emulador
 

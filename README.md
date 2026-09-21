@@ -96,7 +96,7 @@ A suíte de testes do qaFood é composta por todos os tipos de testes descritos 
 
 | Tipo de Teste | O que valida | Exemplos na suíte |
 | --- | --- | --- |
-| **Funcionais** | Regras de negócio: autenticação, busca, cálculo de subtotal/total, adição/remoção de itens, confirmação de pedido | Categoria predominante — presente em todas as 5 Features |
+| **Funcionais** | Regras de negócio: autenticação, busca, cálculo de subtotal/total, adição/remoção de itens, confirmação de pedido | Categoria predominante, presente em todas as 5 Features |
 | **E2E (ponta a ponta)** | Jornada completa atravessando múltiplas Features em sequência | "Após realizar o pedido, clicar em voltar e retornar a página de Lojas"; "Validar a Rotação de Tela após a Conclusão do Pedido" |
 | **Integração** | Persistência e comunicação de estado entre telas/módulos | "Carrinho não duplica nem perde produto após múltiplas idas e vindas"; "Sacola não é mantida após fechar e reabrir o app" |
 | **Negativos / Borda (edge cases)** | Entradas inválidas e valores-limite | Campos vazios, e-mail malformado, senha incorreta, espaços em branco, caracteres especiais, capitalização, cupom inválido |

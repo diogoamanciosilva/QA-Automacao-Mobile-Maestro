@@ -23,7 +23,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [💻 Features](#-features)
 - [🏠 1. Feature Login](#-1-feature-login)
 - [👩🏽‍🍳 2. Feature Lojas](#-2-feature-lojas)
-- [🔍 3. Feature Cardápio](#-3-feature-cardápio)
+- [🍽️ 3. Feature Cardápio](#-3-feature-cardápio)
 - [🛒 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
 - [🔍 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
@@ -428,7 +428,7 @@ https://github.com/user-attachments/assets/03e83374-b7a0-45f2-ad3f-a2c33baab93c
 
 ---
 
-## 🔍 3. Feature Cardápio
+## 🍽️ 3. Feature Cardápio
 
 | Feature                   |  Testes |
 | ------------------------- | ------: |

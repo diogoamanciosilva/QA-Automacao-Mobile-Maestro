@@ -25,7 +25,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [👩🏽‍🍳 2. Feature Lojas](#-2-feature-lojas)
 - [🍽️ 3. Feature Cardápio](#-3-feature-cardápio)
 - [🛒 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
-- [🔍 5. Feature Pedido](#-5-feature-pedido)
+- [😋 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
 - [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)
 - [📊 Análise da Suíte de Testes](#-análise-da-suíte-de-testes)
@@ -547,7 +547,7 @@ https://github.com/user-attachments/assets/1c144fbd-0f6f-49c2-bed9-fd91af716dd1
 
 ---
 
-## 🔍 5. Feature Pedido
+## 😋 5. Feature Pedido
 
 | Feature                   |  Testes |
 | ------------------------- | ------: |

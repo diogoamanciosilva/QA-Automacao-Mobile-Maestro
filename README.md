@@ -21,10 +21,10 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [📁 Estrutura do repositório](#-estrutura-do-repositório)
 - [🧭 A Jornada do usuário](#-a-jornada-do-usuário)
 - [💻 Features](#-features)
-- [🔍 1. Feature Login](#-1-feature-login)
-- [🔍 2. Feature Lojas](#-2-feature-lojas)
+- [🏠 1. Feature Login](#-1-feature-login)
+- [👩🏽‍🍳 2. Feature Lojas](#-2-feature-lojas)
 - [🔍 3. Feature Cardápio](#-3-feature-cardápio)
-- [🔍 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
+- [🛒 4. Feature Sacola (Carrinho)](#-4-feature-sacola-carrinho)
 - [🔍 5. Feature Pedido](#-5-feature-pedido)
 - [🐞 Bugs Encontrados](#-bugs-encontrados)
 - [🔗 Bug × Feature × Causa Raiz](#-bug--feature--causa-raiz)
@@ -305,7 +305,7 @@ As informações a seguir apresentam a estrutura completa da suíte de testes do
 
 ---
 
-## 🔍 1. Feature Login
+## 🏠 1. Feature Login
 
 | Feature                   |  Testes |
 | ------------------------- | ------: |
@@ -362,7 +362,7 @@ https://github.com/user-attachments/assets/e8c3bc69-581b-4647-b176-4fc54099d5a4
 
 ---
 
-## 🔍 2. Feature Lojas
+## 👩🏽‍🍳 2. Feature Lojas
 
 | Feature                   |  Testes |
 | ------------------------- | ------: |
@@ -488,7 +488,7 @@ https://github.com/user-attachments/assets/14f05aaf-79a5-429b-a4a6-b2ac17bbe0eb
 
 ---
 
-## 🔍 4. Feature Sacola (Carrinho)
+## 🛒 4. Feature Sacola (Carrinho)
 
 | Feature                   |  Testes |
 | ------------------------- | ------: |

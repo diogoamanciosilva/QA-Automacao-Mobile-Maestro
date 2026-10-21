@@ -260,14 +260,138 @@ Selecione o device `<IP>:25555` na lista.
 
 ## 📁 Estrutura do repositório
 
-```text
-Maestro/
-├── 1 - Feature_Login/
-├── 2 - Feature_Lojas/
-├── 3 - Feature_Cardápio/
-├── 4 - Feature_Sacola (Carrinho)/
-└── 5 - Feature_Pedido/
-```
+QA-Automacao-Mobile-Maestro-YAML/
+│
+├── 1 - Feature_Login/                 ← 36 fluxos: validação de campos, e-mail, senha, correção, teclado/ciclo de vida, cliques repetidos, condição de corrida e tentativas
+│   ├── A) 1. Login com credenciais corretas.yaml
+│   ├── A) 2 . Login sem preencher e-mail e senha.yaml
+│   ├── A) 3. Login preenchendo e-mail, sem preencher senha.yaml
+│   ├── A) 4. Login preenchendo senha, sem preencher e-mail.yaml
+│   ├── A) 5. Login com ambos os campos vazios deve bloquear o envio.yaml
+│   ├── A) 6. Login com campo de e-mail vazio deve bloquear o envio confirmado.yaml
+│   ├── A) 7. Login com campo de senha vazio deve bloquear o envio confirmado.yaml
+│   ├── A) 8. E-mail com formato inválido.yaml
+│   ├── A) 9. Login com e-mail em formato inválido deve exibir erro de validação.yaml
+│   ├── B) 1. E-mail não cadastrado.yaml
+│   ├── B) 2. Login com e-mail que não existe na base deve exibir erro.yaml
+│   ├── B) 3. E-mail e senha, ambos só com espaço.yaml
+│   ├── B) 4. E-mail só com espaço, senha vazia.yaml
+│   ├── B) 5. Senha só com espaço, e-mail vazio.yaml
+│   ├── B) 6. E-mail válido com espaços nas pontas.yaml
+│   ├── B) 7. E-mail em maiúsculas.yaml
+│   ├── B) 8. E-mail com caractere +.yaml
+│   ├── B) 9. E-mail com caractere especial (apóstrofo).yaml
+│   ├── C) 1. E-mail válido + senha incorreta.yaml
+│   ├── C) 2. Login com senha incorreta deve exibir erro e não avançar.yaml
+│   ├── C) 3 .Senha incorreta em maiúsculas.yaml
+│   ├── C) 4. Senha muito longa.yaml
+│   ├── C) 5. E-mail muito longo.yaml
+│   ├── D) 1. Corrige o e-mail antes do primeiro envio.yaml
+│   ├── D) 2. Erra a senha, corrige, e consegue entrar.yaml
+│   ├── E) 1. Tecla Enter-Done do teclado em vez do botão.yaml
+│   ├── E) 2. Rotação de tela durante o preenchimento (retenção de estado).yaml
+│   ├── E) 3. App em segundo plano e retorno (Home + relaunch).yaml
+│   ├── F) 1. Duplo clique sequencial no botão Entrar.yaml
+│   ├── F) 2. Cliques fixos (5x), independente do resultado.yaml
+│   ├── F) 3. Cliques repetidos até aparecer erro (sem assert).yaml
+│   ├── F) 4. Cliques repetidos até aparecer erro (com confirmação).yaml
+│   ├── G) 1. Duplo toque simultâneo no botão Entrar (teste de condição de corrida).yaml
+│   ├── H) 1. Mesma conta, senha errada 5x seguidas.yaml
+│   ├── H) 2. Contas diferentes, senha errada em sequência (bloqueio global vs. por conta).yaml
+│   └── H) 3. Login com campo de senha vazio.yaml
+│
+├── 2 - Feature_Lojas/                 ← 35 fluxos: lista de lojas, scroll, endereço, busca, case-sensitive, caracteres especiais e sessão
+│   ├── A) 1. Login com sucesso e acesso a página dos restaurantes.yaml
+│   ├── A) 2. Abrir cardápio ao clicar em restaurante da lista.yaml
+│   ├── A) 3. Login com sucesso e scroll até a loja Maria Doceria Gourmet.yaml
+│   ├── B) 1. Login com sucesso e scroll até a loja Bulldog Hamburgueria.yaml
+│   ├── B) 2. Login com sucesso e scroll até a loja Churrascaria Gaúcha.yaml
+│   ├── B) 3. Login com sucesso e scroll até a loja Nonno Bepe Pizzaria.yaml
+│   ├── B) 4. Login com sucesso e scroll até a loja Pastelaria da Maria.yaml
+│   ├── B) 5. Login com sucesso e scroll a loja Shushi Home.yaml
+│   ├── B) 6. Scroll até o fim da página inicial (último restaurante da lista).yaml
+│   ├── C) 1. Clicar em Selecione seu endereço (confirma que o modal de permissão abriu).yaml
+│   ├── C) 2. Selecionar endereço e clicar na opção Cancelar.yaml
+│   ├── C) 3. Selecionar endereço e clicar na opção Permitir.yaml
+│   ├── C) 4. Endereço preenchido automaticamente ao permitir localização.yaml
+│   ├── D) 1. Busca por um único caractere deve retornar resultado.yaml
+│   ├── D) 2. Busca por termo parcial deve retornar restaurantes correspondentes.yaml
+│   ├── D) 3. Busca por restaurante inexistente exibe mensagem de 'nenhum restaurante encontrado'.yaml
+│   ├── D) 4. Limpar a busca deve permitir realizar uma nova pesquisa de lojas.yaml
+│   ├── D) 5. Busca por termo parcial do nome do restaurante.yaml
+│   ├── E) 1. Busca específica a loja Bulldog Hamburgueria.yaml
+│   ├── E) 2. Busca específica a loja Churrascaria Gaúcha.yaml
+│   ├── E) 3. Busca específica a loja Maria Doceria Gourmet.yaml
+│   ├── E) 4. Busca específica a loja Nonno Bepe Pizzaria.yaml
+│   ├── E) 5. Busca específica a loja Pastelaria da Maria.yaml
+│   ├── E) 6. Busca específica a loja Shushi Home.yaml
+│   ├── F) 1. Busca com espaços em branco antes e depois do nome do restaurante.yaml
+│   ├── F) 2. Busca totalmente em minúscula não encontra restaurante existente (confirma case-sensitive).yaml
+│   ├── F) 3. Busca totalmente em maiúsculas não encontra restaurante existente (confirma case-sensitive).yaml
+│   ├── F) 4. Busca com apenas primeira palavra em maiúsculas total não encontra restaurante.yaml
+│   ├── F) 5. Busca com apenas última palavra em maiúsculas total não encontra restaurante.yaml
+│   ├── F) 6. Busca com capitalização mista encontra restaurante normalmente.yaml
+│   ├── G) 1. Busca com apenas espaços em branco não deve retornar resultados.yaml
+│   ├── G) 2. Busca com caracteres especiais e números não quebra o app.yaml
+│   ├── G) 3. Busca com nome parcial válido misturado com números e caracteres especiais.yaml
+│   ├── H) 1. Sessão não é mantida ao fechar e reabrir o app (retorna para login).yaml
+│   └── H) 2. Re-login funciona corretamente após fechar e reabrir o app.yaml
+│
+├── 3 - Feature_Cardápio/              ← 17 fluxos: acesso ao cardápio, conteúdo, navegação, adição de itens, rotação e duplo toque
+│   ├── A) 1. Acessar Cardápio Pastelaria da Maria.yaml
+│   ├── A) 2. Acessar cardápio de restaurante diferente (Bulldog Hamburgueria).yaml
+│   ├── A) 3. Acessar cardápio sem endereço selecionado é bloqueado com alerta.yaml
+│   ├── A) 4. Acessar segundo restaurante não solicita permissão de localização novamente.yaml
+│   ├── B) 1. Cabeçalho do restaurante exibe nome, categoria e seção de cardápio.yaml
+│   ├── B) 2. Item do cardápio exibe nome, preço e descrição corretamente.yaml
+│   ├── B) 3. Cardápio abre com carrinho vazio (0 Produtos).yaml
+│   ├── C) 1. Scroll down e Scroll Up na page.yaml
+│   ├── C) 2. Acessar o Cardápio da Pastelaria Maria e retornar a tela anterior.yaml
+│   ├── C) 3. Botão físico Voltar do Android retorna à lista de restaurantes.yaml
+│   ├── D) 1. Adicionar Pastel de carne ao carrinho e confirmar contador de itens.yaml
+│   ├── D) 2. Verificar se o produto selecionado permanece no carrinho após sair da página do cardápio.yaml
+│   ├── E) 1. Adicionando vários itens do cardápio.yaml
+│   ├── E) 2. Verificar se todos os produtos selecionados permanecem no carrinho após sair da página do cardápio..yaml
+│   ├── E) 3. Carrinho não duplica nem perde produto após múltiplas idas e vindas.yaml
+│   ├── F) 1. Contador de produtos mantido após rotação de tela no cardápio.yaml
+│   └── G) 1. Duplo toque rápido no botão de adicionar processa as duas adições corretamente.yaml
+│
+├── 4 - Feature_Sacola (Carrinho)/     ← 18 fluxos: sacola vazia, itens, subtotal, remoção, limpeza, navegação, rotação e sessão
+│   ├── A) 1. Abrir a sacola sem nenhum item adicionado deve exibir estado vazio.yaml
+│   ├── A) 2. Abrir a sacola (carrinho) após adicionar item.yaml
+│   ├── A) 3. Adicionar produto e remover.yaml
+│   ├── A) 4. Adicionar o mesmo item duas vezes reflete duas quantidades do mesmo item dentro da sacola.yaml
+│   ├── B) 1. Subtotal da sacola reflete corretamente a soma dos itens adicionados.yaml
+│   ├── B) 2. Subtotal soma corretamente quando o mesmo item é adicionado duas vezes.yaml
+│   ├── C) 1. Adicionar produto na sacola e retornar para a page anterior (cardápio).yaml
+│   ├── C) 2. Adicionar um produto à sacola, retornar à página anterior e adicionar outro produto diferente..yaml
+│   ├── D) 1. Adicionar produtos diferentes na sacola (carrinho) e clicar no botão cancelar.yaml
+│   ├── D) 2. Adicionar produto, clicar em remover e, depois, desistir da remoção e clicar no botão Cancelar.yaml
+│   ├── E) 1. Adicionar produtos diferentes e limpar a sacola (carrinho).yaml
+│   ├── E) 2. Botão Limpar permanece habilitado e responde ao toque mesmo com a sacola vazia.yaml
+│   ├── E) 3. Limpar sacola e readicionar item usando o botão 'Adicionar itens' da própria sacola.yaml
+│   ├── F) 1. Sacola com três itens diferentes exibe todos e soma o subtotal corretamente.yaml
+│   ├── F) 2. Botão físico Voltar (Android) na tela da sacola retorna ao cardápio sem perder os itens.yaml
+│   ├── G) 1. Rotação de tela na sacola mantém os itens e contador.yaml
+│   ├── G) 2. Sessão de login não persiste após fechar e reabrir o app.yaml
+│   └── G) 3. Sacola zera após fechar e reabrir o app (exige novo login).yaml
+│
+├── 5 - Feature_Pedido/                ← 12 fluxos: confirmação, cupom, pagamento, pedido realizado, navegação e rotação
+│   ├── A) 1. Confirmar pedido exibe subtotal, taxa de entrega e total corretos.yaml
+│   ├── A) 2. Confirmar pedido com múltiplos itens soma corretamente Subtotal + Taxa de entrega.yaml
+│   ├── B) 1. Validar alerta ao tentar fazer pedido sem selecionar forma de pagamento.yaml
+│   ├── B) 2. Não preencher o campo do Cupom e clicar em adicionar, validar exibição de mensagem de erro.yaml
+│   ├── B) 3. Aplicar cupom inválido exibe mensagem de erro.yaml
+│   ├── C) 1. Voltar da tela de confirmação sem finalizar mantém o carrinho intacto.yaml
+│   ├── D) 1. Fazer pedido - Dinheiro.yaml
+│   ├── D) 2. Fazer pedido - Cartão de credito.yaml
+│   ├── D) 3. Fazer pedido com Cartão de crédito confirma sucesso e forma de pagamento correta.yaml
+│   ├── E) 1. Confirmar todos os dados completos do Pedido Realizado.yaml
+│   ├── F) 1. Após realizar o pedido, clicar em voltar e retornar a página de Lojas.yaml
+│   └── G) 1. Validar a Rotação de Tela após a Conclusão do Pedido.yaml
+│
+├── qafoodcompletao.apk                ← Aplicativo Android testado
+└── README.md
 
 Cada teste que depende de login reutiliza o mesmo flow base por meio de `runFlow`, evitando duplicação:
 

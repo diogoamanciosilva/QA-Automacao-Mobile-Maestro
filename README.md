@@ -56,11 +56,13 @@ https://github.com/user-attachments/assets/794fba4c-bc3d-45a3-a7b9-d5e267cb79f7
 
 O framework Maestro utiliza recursos e conceitos de outros frameworks como **Appium, Espresso, UIAutomator e XCTest**, aproveitando suas bases para a execução de testes automatizados.
 
-### Pré-requisitos para utilização no Windows
+### 🛠️ Pré-requisitos para Execução no Windows
 
-* **Java JDK 11**
-* **Android Studio**
-* **Linux (WSL)**
+| Ferramenta / Tecnologia | Função / Aplicação no Projeto |
+| :--- | :--- |
+| **Java JDK 11** | Kit de desenvolvimento Java necessário para compilação e execução do ambiente Android |
+| **Android Studio** | IDE e gerenciador de SDKs/Emuladores Android para execução dos testes mobile |
+| **Linux (WSL)** | Subsystem Linux para execução de scripts e ferramentas de linha de comando no Windows |
   
 ---
 

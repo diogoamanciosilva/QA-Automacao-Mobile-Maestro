@@ -949,15 +949,39 @@ Essa análise técnica, por si só, já reflete uma etapa importante do planejam
 
 ## 💡 Aprendizados técnicos
 
-- **Sintaxe YAML:** `appId` fica no cabeçalho do arquivo, antes do `---`, nunca dentro da lista de comandos. Seletores como `id:` precisam de indentação correta e espaço após os dois-pontos (`id: "email"`, e não `id:"email"`).
-- **`tapOn` não digita:** para preencher campos, utilize `inputText` após o comando de toque, quando necessário.
-- **Ambiguidade de seletores:** `rightOf: "texto"` e `point: "x%,y%"` são frágeis após scroll e podem clicar no elemento errado sem gerar erro. Prefira o `id` real do elemento, descoberto via `maestro hierarchy` ou pelo Inspector do Maestro Studio.
-- **`scrollUntilVisible` é just-in-time:** revelar um elemento não garante que os próximos também fiquem visíveis. Utilize um `scrollUntilVisible` para cada elemento que precise ser tocado ou validado.
-- **Alertas e pop-ups de confirmação:** título e corpo do modal geralmente são utilizados com `assertVisible` para validação; o botão de ação final deve ser acionado com `tapOn`.
-- **IDs confirmados no app:** `add-item-buttom` (sic — contém erro de digitação no próprio app), `open-cart-button` e `back-button`.
-- **Mensagens reais confirmadas:** `"Erro ao realizar login"`, `"CUPOM inválido"` e `"Selecione uma forma de pagamento"`.
-- **Ciclo de vida do aplicativo:** fechar/reabrir o app com `launchApp: clearState: false` **não preserva a sessão de login neste aplicativo**. É necessário refazer o `runFlow` de login mesmo sem limpar o estado.
+A execução deste projeto gerou aprendizados técnicos concretos em oito áreas:
 
+**1. Sintaxe YAML e estrutura de comandos exigem precisão rígida**
+
+O `appId` fica no cabeçalho do arquivo, antes do `---`, nunca dentro da lista de comandos. Seletores como `id:` precisam de indentação correta e espaço após os dois-pontos (`id: "email"`, e não `id:"email"`). Erros de formatação no YAML causam falhas de parsing antes mesmo da execução do teste.
+
+**2. Separação clara entre ação de toque e entrada de dados**
+
+O comando `tapOn` aciona a interação no elemento, mas não realiza a digitação. Para preencher campos de texto, é necessário utilizar o `inputText` logo após o comando de toque, garantindo que o foco esteja no input correto antes do envio dos caracteres.
+
+**3. Resolução de ambiguidade de seletores favorece IDs nativos**
+
+Estratégias baseadas em posicionamento relativo, como `rightOf: "texto"` e `point: "x%,y%"`, mostram-se frágeis após operações de scroll e podem interagir com o elemento errado sem emitir erro explícito. A abordagem mais estável é utilizar o `id` real do elemento, identificado via `maestro hierarchy` ou pelo Inspector do Maestro Studio.
+
+**4. Rolagem de tela deve ser tratada elemento por elemento**
+
+O uso de `scrollUntilVisible` atua de forma *just-in-time*: revelar um elemento na viewport não garante que os elementos subsequentes também estarão visíveis. Cada elemento que precise ser tocado ou validado ao longo da página exige seu próprio `scrollUntilVisible` dedicado.
+
+**5. Validação de modais e alertas exige encadeamento de asserção e ação**
+
+Em pop-ups e alertas de confirmação, o título e o corpo do modal devem ser validados isoladamente via `assertVisible` para confirmar a presença da mensagem. A ação de fechamento ou confirmação deve ser tratada em um passo separado, acionando o botão correspondente via `tapOn`.
+
+**6. Mapeamento preciso de seletores reais do produto**
+
+A identificação direta dos seletores no aplicativo confirmou IDs específicos para o fluxo principal, incluindo variações do próprio código da aplicação como `add-item-buttom` (com erro de digitação no próprio app), `open-cart-button` e `back-button`. O mapeamento correto desses identificadores evita falhas por suposição de nomenclatura.
+
+**7. Mapeamento e asserção de mensagens reais do sistema**
+
+As validações de exceção e regra de negócio foram consolidadas com base nas strings exatas retornadas pela interface do aplicativo: `"Erro ao realizar login"`, `"CUPOM inválido"` e `"Selecione uma forma de pagamento"`. Validar o texto exato garante que o feedback ao usuário final está correto.
+
+**8. Gestão de estado e ciclo de vida do aplicativo**
+
+Fechar e reabrir o aplicativo com a flag `launchApp: clearState: false` **não preserva a sessão de login neste aplicativo**. Essa característica de arquitetura do app exige que o fluxo de login (`runFlow`) seja executado novamente a cada início de teste, mesmo quando o estado da aplicação não é limpo explicitamente.
 ---
 
 ## 📬 Contato

@@ -260,6 +260,7 @@ Selecione o device `<IP>:25555` na lista.
 
 ## 📁 Estrutura do repositório
 
+```
 QA-Automacao-Mobile-Maestro-YAML/
 │
 ├── 1 - Feature_Login/                 ← 36 fluxos: validação de campos, e-mail, senha, correção, teclado/ciclo de vida, cliques repetidos, condição de corrida e tentativas
@@ -392,6 +393,7 @@ QA-Automacao-Mobile-Maestro-YAML/
 │
 ├── qafoodcompletao.apk                ← Aplicativo Android testado
 └── README.md
+```
 
 Cada teste que depende de login reutiliza o mesmo flow base por meio de `runFlow`, evitando duplicação:
 

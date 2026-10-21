@@ -34,7 +34,7 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 - [🚧 Limitações e escopo](#-limitações-e-escopo)
 - [🚀 Próximos passos (CI/CD)](#-próximos-passos-cicd)
 - [💡 Aprendizados técnicos](#-aprendizados-técnicos)
-- [✅ Contato](#-contato)
+- [📬 Contato](#-contato)
   
 ---
 
@@ -960,7 +960,7 @@ Essa análise técnica, por si só, já reflete uma etapa importante do planejam
 
 ---
 
-## ✅ Contato
+## 📬 Contato
 
  
 | LinkedIn                   |  https://www.linkedin.com/in/diogoamanciosilva/ |

@@ -1,11 +1,19 @@
 
 ## 🤖 Automação Mobile Maestro (qaFood)
 
-<img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
-
 O projeto consiste de Suíte de testes **end-to-end (E2E)** para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela **Qazando** (https://qazando.com.br), **Professores Eduardo Finotti e Hebert Soares.**
 
+<img width="405" height="860" alt="Screenshot do qaFood" src="https://github.com/user-attachments/assets/15ad61e5-2117-42e6-a2d8-b7ddb1f90092" />
+
 Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo Amancio**, com base nos conhecimentos adquiridos no curso **Automação Mobile com Maestro**.
+
+[![Testes](https://img.shields.io/badge/Testes-118%20cenários-brightgreen)]()
+[![Features](https://img.shields.io/badge/Features-5-blue)]()
+[![Stack](https://img.shields.io/badge/Stack-Maestro%20%7C%20YAML%20%7C%20Android-yellow)]()
+[![Plataforma](https://img.shields.io/badge/Plataforma-qaFood-orange)]()
+[![Dispositivo](https://img.shields.io/badge/Dispositivo-Android%20(Emulador)-3DDC84)]()
+[![Bugs](https://img.shields.io/badge/Bugs%20encontrados-8-red)]()
+[![Licença](https://img.shields.io/badge/Licença-MIT-lightgrey)]()
 
 ---
 

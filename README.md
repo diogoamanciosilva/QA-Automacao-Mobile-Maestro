@@ -1,5 +1,5 @@
 
-## 🤖 Automação Mobile Maestro (qaFood)
+# 🤖 Automação Mobile Maestro (qaFood)
 
 O projeto consiste de Suíte de testes **end-to-end (E2E)** para o aplicativo **qaFood**, uma versão do **iFood** utilizada como projeto de estudo, desenvolvida pela **Qazando** (https://qazando.com.br), **Professores Eduardo Finotti e Hebert Soares.**
 

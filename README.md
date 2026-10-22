@@ -15,6 +15,9 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 [![Bugs](https://img.shields.io/badge/Bugs%20encontrados-8-red)]()
 [![Licença](https://img.shields.io/badge/Licença-MIT-lightgrey)]()
 
+>Projeto de automação de testes mobile desenvolvido com Maestro e YAML, validando as principais funcionalidades e fluxos do aplicativo qaFood em ambiente Android (Emulador).
+>A suíte cobre 118 cenários de teste distribuídos em 5 features, resultando na identificação e mapeamento de 8 >bugs na aplicação.
+
 ---
 
   ## 📑 Índice

@@ -230,6 +230,11 @@ package:com.qazandoqafood
 
 > ⚠️ **Importante:** depois que o aplicativo estiver instalado, o arquivo `.apk` não precisa ser utilizado novamente para executar os testes. O Maestro interage diretamente com o aplicativo por meio do `appId: com.qazandoqafood`.
 
+> ⚠️ **Nota sobre o APK no repositório:** O arquivo `qafoodcompletao.apk` foi incluído
+> diretamente para facilitar a reprodução do ambiente por avaliadores. Em projetos reais,
+> binários são distribuídos via pipeline de build (Fastlane, Bitrise, GitHub Actions)
+> e nunca versionados junto ao código-fonte.
+
 ### 3. Conectar o WSL ao emulador
 
 ```bash

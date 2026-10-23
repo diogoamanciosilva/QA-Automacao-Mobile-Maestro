@@ -16,8 +16,8 @@ Todos os testes e a estrutura deste repositório foram desenvolvidos por **Diogo
 [![Licença](https://img.shields.io/badge/Licença-MIT-lightgrey)]()
 
 > Projeto de automação de testes mobile E2E desenvolvido com Maestro e YAML,
-> validando a jornada completa do usuário no aplicativo qaFood — do login à finalização
-> do pedido — em ambiente Android (Emulador). A suíte cobre 118 cenários distribuídos
+> validando a jornada completa do usuário no aplicativo qaFood do login à finalização
+> do pedido em ambiente Android (Emulador). A suíte cobre 118 cenários distribuídos
 > em 5 Features, com identificação e mapeamento de 8 bugs na aplicação.
 
 ---

@@ -920,9 +920,7 @@ Foram aplicados de forma sistemática, principalmente na Feature Login e na Feat
 - **Teste de robustez do sistema operacional:** Validou o comportamento do app sob condições fora do controle direto da aplicação: rotação de tela, transição para segundo plano e retorno, e reinicialização completa do processo, cobrindo cenários de uso real que vão além da interação direta com a interface.
 
 ### ⚠️ Observação
-```text
-Essa combinação de técnicas  planejadas e exploratórias, permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar bugs reais que não estariam cobertos por um roteiro de teste estritamente linear.
-```
+> Essa combinação de técnicas planejadas e exploratórias permitiu não apenas confirmar que as funcionalidades atendem ao comportamento esperado, mas também identificar bugs reais que não estariam cobertos por um roteiro de teste estritamente linear.
 ---
 
 ## 🚧 Limitações e escopo

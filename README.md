@@ -763,8 +763,10 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 ---
 
 ### ⚠️ Observação
-```text
-Nenhum dos bugs acima impede o uso do aplicativo, todos são desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não falhas críticas. Os itens de severidade **Cosmético (Interface/UI)** foram incluídos por transparência e completude do processo de teste, não por representarem risco ao usuário.
+> ⚠️ **Observação:** Nenhum dos bugs acima impede o uso do aplicativo. Todos são
+> desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não
+> falhas críticas. Os itens cosméticos foram incluídos por transparência e completude
+> do processo de teste.
 ```
 ---
 

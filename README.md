@@ -763,7 +763,7 @@ Durante a construção da suíte, além da validação funcional, foram identifi
 ---
 
 ### ⚠️ Observação
-> ⚠️ **Observação:** Nenhum dos bugs acima impede o uso do aplicativo. Todos são
+>  Nenhum dos bugs acima impede o uso do aplicativo. Todos são
 > desvios de comportamento esperado ou inconsistências de texto/nomenclatura, não
 > falhas críticas. Os itens cosméticos foram incluídos por transparência e completude
 > do processo de teste.
